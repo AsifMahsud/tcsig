@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HOME | TCSIG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" sizes="192x192" href="./images/site-icon.png">
+    <meta http-equiv="content-language" content="en-us">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css /style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/index.js"></script>
+    <script>
+        function setHeroMinHeight() {
+            var headerHeight = document.querySelector('header').offsetHeight;
+            document.querySelector('.hero-section').style.paddingTop = headerHeight + 80 + 'px';
+        }
+
+        window.addEventListener('DOMContentLoaded', setHeroMinHeight);
+        window.addEventListener('resize', setHeroMinHeight);
+    </script>
+</head>
+
+<body>
+    <header class="container position-absolute top-0 start-0 end-0">
+        <!-- header container -->
+        <div class="bg-secondary mx-2 d-lg-flex">
+            <!-- logo -->
+            <div class="logo px-4 py-4 bg-primary">
+                <img src="./images/TCSIG-Logo.jpeg" class="img-fluid" alt="tcsig site icon" />
+            </div>
+            <div class="header-content w-100">
+                <!-- secondary nav and chat icon -->
+                <div class="secondary-nav popover-header my-2 my-lg-0 mx-4">
+                    <!-- secondary nav -->
+                    <nav class="navbar navbar-expand-lg bg-secondary">
+                        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="position-relative w-100">
+                            <div class="collapse navbar-collapse position-absolute w-100 bg-light p-4 p-lg-0 rounded"
+                                id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Governance</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">News</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Documents</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- chat icon -->
+                        <a href="#"><img src="./images/LynnSisnerosBitmoji.png" class="img-fluid chat-icon"
+                                alt="TCSIG personality. Lynn bitmoji" /></a>
+                    </nav>
+                </div>
+                <!-- nav and search -->
+                <div class="mx-4 mx-lg-0 d-flex justify-content-between justify-content-lg-start align-items-baseline">
+                    <!-- primary nav -->
+                    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler px-4 py-3 bg-primary text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown2"
+                                aria-controls="navbarNavDropdown2" aria-expanded="false" aria-label="Toggle navigation">
+                                MENU <i class="fa-solid fa-bars ps-2"></i>
+                            </button>
+                            <div class="collapse navbar-collapse px-2" id="navbarNavDropdown2">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./about-us">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Employee Benefits</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Wellness Center</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Worker's Comp</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Property / Casualty</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- search icon -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <button type="button" class="btn btn-primary btn-lg position-fixed top-0 end-0"
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="fa fa-times text-dark fs-1"></i>
+                                </button>
+                                <div class="modal-body">
+                                    <form class="searchform" action="#">
+                                        <input type="search" class="form-control" name="search" value="" id="search"
+                                            placeholder="Type keyword(s) here and hit Enter …" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section position-relative"
+        style="background-image: url(http://wp.magnium-themes.com/thebuilt/thebuilt-5/wp-content/uploads/2016/03/photodune-5445260-engineer-at-a-construction-site-m.jpg);">
+        <div class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0">
+        </div>
+        <div class="container d-flex flex-column justify-content-end position-relative">
+            <h1 class="text-white">About Us</h1>
+        </div>
+    </section>
+    <section class="hero-breadcrumb border-bottom mb-4 py-2">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent mb-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- who we are -->
+    <section id="who-we-are" class="py-5">
+        <div class="container">
+            <div class="row align-items-center pb-4">
+                <div class="col-md-6 pb-4 pb-lg-0">
+                    <h2 class="stroke mb-4 lh-base">WHO WE ARE</h2>
+                    <p>The Tri-County Schools Insurance Group, Joint Powers Authority (JPA), was formed in 1983 for the
+                        purpose of establishing and maintaining property, liability, health, dental, vision and group
+                        life.</p>
+                    <p>Advantages for our members include; greater bargaining power in the insurance market, choice of
+                        more specialized benefits, cost savings, and greater control over services.</p>
+                    <p>TCSIG as a JPA is not in business to make a profit. Often by direct contracting with vendors and
+                        service partners, broker commissions and shareholder dividends can be eliminated. Our overhead
+                        is lower than other insurance carriers and we can retain any interest earned to
+                        offset expenses.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" alt="About Us Image" class="img-fluid">
+                </div>
+            </div>
+            <div class="row align-items-center flex-lg-row-reverse">
+                <div class="col-md-6 pb-4 pb-lg-0">
+                    <p>TCSIG is a public entity operating in accordance with the Ralph M. Brown Act. The JPA is governed
+                        by a Board of Directors comprised of representatives from each member public entity. Each member
+                        entity represents one vote on the board. The meetings are open to
+                        the public.</p>
+                    <p>One important key to the success of TCSIG is the active participation of employees on the
+                        Employee Benefits Advisory Committee. Each public entity appoints employees to the Committee
+                        which meets several times each year to advise the Board and Executive Committee on benefit
+                        programs. While TCSIG believes the employees acceptance of this program is high, we solicit the
+                        input and contributions of our members and their employees to maintain the long-term success of
+                        Tri-County Schools Insurance Group.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x300" alt="About Us Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of who we are -->
+    <!-- our team -->
+    <section class="team-section py-5">
+        <div class="container">
+            <h2 class="stroke mb-5 lh-base">OUR TEAM</h2>
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-0 team-card">
+                        <div class="team-img-wrapper text-center position-relative">
+                            <img src="https://via.placeholder.com/250x250.png?text=John+Doe" class="rounded-circle"
+                                alt="Team Member 1" width="200">
+                            <div class="team-img-overlay position-absolute top-0 start-0 end-0 bottom-0 rounded-circle">
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Brandon Ballard</h5>
+                            <p class="card-text mb-0">Co-Founder &amp; CEO</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="social-link text-primary px-1"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link text-primary px-1"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link text-primary px-1"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-0 team-card">
+                        <div class="team-img-wrapper text-center position-relative">
+                            <img src="https://via.placeholder.com/250x250.png?text=Jane+Smith" class="rounded-circle"
+                                alt="Team Member 2" width="200">
+                            <div class="team-img-overlay position-absolute top-0 start-0 end-0 bottom-0 rounded-circle">
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Joey Gartin</h5>
+                            <p class="card-text mb-0">Co-Founder &amp; CTO</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="social-link text-primary px-1"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link text-primary px-1"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link text-primary px-1"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-transparent border-0 team-card">
+                        <div class="team-img-wrapper text-center position-relative">
+                            <img src="https://via.placeholder.com/250x250.png?text=Jane+Smith" class="rounded-circle"
+                                alt="Team Member 2" width="200">
+                            <div class="team-img-overlay position-absolute top-0 start-0 end-0 bottom-0 rounded-circle">
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Joey Gartin</h5>
+                            <p class="card-text mb-0">Co-Founder &amp; CTO</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="social-link text-primary px-1"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link text-primary px-1"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link text-primary px-1"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of our team -->
+    <!-- C.O.R.E -->
+    <div class="container pb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2 class="fw-bold mb-4">C.O.R.E.</h2>
+                <p class="lead mb-4">CORE was founded in 2009 by Tri-County Schools Insurance Group to foster better
+                    education for the public at large and our membership regarding health, property and liability risks
+                    which we all must deal with every day. This organization mirrors the governance of the Executive
+                    Committee and thereby represents a large segment of our community.</p>
+                <p class="mb-4">Over the years, it has helped improve public access to our schools by organizing
+                    disability access audits using the DACTrak system. The funding for this effort was provided by
+                    Tri-County Schools Insurance Group and it benefited school districts and offices of education in
+                    Yuba, Sutter, Colusa and counties. The allocated funds by TCSIG in support of this effort were only
+                    used as audits were performed.</p>
+                <p class="mb-4">CORE has also reached out to the community and TCSIG members in partnership by
+                    publishing newsletters containing information about benefit programs to the TCSIG members and risk
+                    management messages which are addressed to all members of the community. These communications are
+                    sent periodically throughout the year.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of C.O.R.E -->
+    <!-- footer -->
+    <div class="d-flex flex-column">
+        <footer class="bg-secondary text-white mt-auto">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About Company</h5>
+                        <img src="./images/TCSIG-Logo.jpeg" alt="Company Logo" class="img-fluid mb-3" width="250">
+                        <p>Our Mission is to pool risk and purchasing power of public entities to provide quality
+                            programs
+                            to our participants in an effective manner while emphasizing customer satisfaction,
+                            stability,
+                            financial solvency and cost.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Form</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phone" name="phone"
+                                    placeholder="Enter your phone number">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-select" id="subject" name="subject" required>
+                                    <option value="">Choose a subject</option>
+                                    <option value="employee-benefits">Employee Benefits</option>
+                                    <option value="wellness-center">Wellness Center</option>
+                                    <option value="workers-comp">Worker's Comp</option>
+                                    <option value="property-casualty">Property / Casualty</option>
+                                    <option value="governance">Governance</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5"
+                                    placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 bg-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Locations</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>TCSIG Admin Office</strong></li>
+                            <li>530-822-5299</li>
+                            <li>400 Plumas Blvd., Suite 210</li>
+                            <li>Yuba City, CA 95991</li>
+                            <li class="mt-3"><strong>TCSIG Wellness Center</strong></li>
+                            <li>530-822-5500</li>
+                            <li>1174 Live Oak Blvd.</li>
+                            <li>Yuba City, CA 95991</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <p class="text-center">&copy; Tri-County Schools Insurance Group</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

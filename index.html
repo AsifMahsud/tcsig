@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HOME | TCSIG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" sizes="192x192" href="./images/site-icon.png">
+    <meta http-equiv="content-language" content="en-us">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css /style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="container position-absolute top-0 start-0 end-0">
+        <!-- header container -->
+        <div class="bg-secondary mx-2 d-lg-flex">
+            <!-- logo -->
+            <div class="logo px-4 py-4 bg-primary">
+                <img src="./images/TCSIG-Logo.jpeg" class="img-fluid" alt="tcsig site icon" />
+            </div>
+            <div class="header-content w-100">
+                <!-- secondary nav and chat icon -->
+                <div class="secondary-nav popover-header my-2 my-lg-0 mx-4">
+                    <!-- secondary nav -->
+                    <nav class="navbar navbar-expand-lg bg-secondary">
+                        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="position-relative w-100">
+                            <div class="collapse navbar-collapse position-absolute w-100 bg-light p-4 p-lg-0 rounded"
+                                id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Governance</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">News</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Documents</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- chat icon -->
+                        <a href="#"><img src="./images/LynnSisnerosBitmoji.png" class="img-fluid chat-icon"
+                                alt="TCSIG personality. Lynn bitmoji" /></a>
+                    </nav>
+                </div>
+                <!-- nav and search -->
+                <div class="mx-4 mx-lg-0 d-flex justify-content-between justify-content-lg-start align-items-baseline">
+                    <!-- primary nav -->
+                    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler px-4 py-3 bg-primary text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown2"
+                                aria-controls="navbarNavDropdown2" aria-expanded="false" aria-label="Toggle navigation">
+                                MENU <i class="fa-solid fa-bars ps-2"></i>
+                            </button>
+                            <div class="collapse navbar-collapse px-2" id="navbarNavDropdown2">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./about-us.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./employee-benefits.html">Employee Benefits</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Wellness Center</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Worker's Comp</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Property / Casualty</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- search icon -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <button type="button" class="btn btn-primary btn-lg position-fixed top-0 end-0"
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="fa fa-times text-dark fs-1"></i>
+                                </button>
+                                <div class="modal-body">
+                                    <form class="searchform" action="#">
+                                        <input type="search" class="form-control" name="search" value="" id="search"
+                                            placeholder="Type keyword(s) here and hit Enter …" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- welcome banner -->
+    <div class="container-fluid p-0">
+        <div class="row align-items-center w-100">
+            <div class="col-md-12 p-0">
+                <div class="banner-video">
+                    <video autoplay muted loop>
+                        <source src="./images/abstract-12909.mp4" type="video/mp4">
+                    </video>
+                    <div
+                        class="banner-buttons position-absolute start-0 end-0 d-flex flex-wrap justify-content-center flex-column flex-lg-row">
+                        <a href="#about-us" class="btn btn-lg btn-primary">About Us</a>
+                        <a href="#employee-benefits" class="btn btn-lg btn-primary">Employee Benefits</a>
+                        <a href="#wellness-center" class="btn btn-lg btn-primary">Wellness Center</a>
+                        <a href="#workers-comp" class="btn btn-lg btn-primary">Worker's Comp</a>
+                        <a href="#property-casualty" class="btn btn-lg btn-primary">Property/Casualty</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .modal-backdrop {
+            --bs-backdrop-zindex: 1;
+        }
+
+        .banner-video {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .banner-video video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner-buttons {
+            bottom: 10%;
+            z-index: 1;
+        }
+    </style>
+
+    <!-- end of welcome banner -->
+    <!-- about us section -->
+    <section id="about-us" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 pb-5 pb-lg-0">
+                    <h2 class="stroke mb-4 lh-base">About Us/Mission</h2>
+                    <p>The Tri-County Schools Insurance Group, Joint Powers Authority (JPA), was formed in 1983 for the
+                        purpose of establishing and maintaining property, liability, health, dental, vision and group
+                        life. In 2019, TCSIG JPA now includes a workers' compensation program.</p>
+                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" alt="About Us Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about us -->
+    <!-- employee benefits -->
+    <section id="employee-benefits" class="py-5">
+        <div class="container">
+            <div class="row align-items-center flex-lg-row-reverse">
+                <div class="col-md-6 pb-5 pb-lg-0">
+                    <h2 class="stroke mb-4 lh-base">Employee Benefits</h2>
+                    <p>The TCSIG Value</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Multiple Rich Plan Design Options
+                        </li>
+                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>0% rate increase - 6 years in a
+                            row</li>
+                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Wellness Center</li>
+                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Plan Enhancements</li>
+                    </ul>
+                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" alt="Employee Benefits Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of employee benefits -->
+    <!-- wellness center -->
+    <section id="wellness-center" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 pb-5 pb-lg-0">
+                    <h2 class="stroke mb-4 lh-base">Wellness Center</h2>
+                    <p>To remove financial barriers and expand access to COVID-19 testing, TCSIG has the following
+                        solution
+                        to help you combat COVID:</p>
+                    <ol>
+                        <li>
+                            <a href="https://forms.zohopublic.com/tcsig/form/WellnessCenterCovidTestingRequest/formperma/TIQbaJMdnswC8Amhty1h_wIWDSVnxhFiaybalHDrJTw"
+                                target="_blank">Click here</a> for the TCSIG Wellness Center at-home test kits. Use
+                            authorization number 227193.
+                        </li>
+                        <li>
+                            <a href="https://www.tcsig.com/_files/ugd/495bc1_320c9d1aa61b44a5b162ee2fe6671945.pdf"
+                                target="_blank">Click here</a> for the OTC COVID TEST CLAIM FORM for any test kits you
+                            purchase on your own to submit for reimbursement through HealthComp. The maximum
+                            reimbursement
+                            will be $12.
+                        </li>
+                    </ol>
+                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" alt="Wellness Center Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of wellness center -->
+    <!-- wordkers comp -->
+    <section id="workers-comp" class="py-5">
+        <div class="container">
+            <div class="row align-items-center flex-lg-row-reverse">
+                <div class="col-md-6 pb-5 pb-lg-0">
+                    <div class="section-title mb-4">
+                        <h2 class="stroke mb-1 lh-base">Worker's Compensation</h2>
+                        <div class="title-line"></div>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Ownership and control</li>
+                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Non-profit organization</li>
+                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Risk management</li>
+                    </ul>
+                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" alt="Worker's Comp Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of  wordkers comp -->
+    <!-- property casualty -->
+    <section id="property-casualty" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 pb-5 pb-lg-0">
+                    <h2 class="stroke mb-4 lh-base">Property/Casualty</h2>
+                    <p class="mb-4">Broad coverages provided to you and your districts.</p>
+                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" alt="Property/Casualty Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of property casualty -->
+    <!-- footer -->
+    <div class="d-flex flex-column">
+        <footer class="bg-secondary text-white mt-auto">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About Company</h5>
+                        <img src="./images/TCSIG-Logo.jpeg" alt="Company Logo" class="img-fluid mb-3" width="250">
+                        <p>Our Mission is to pool risk and purchasing power of public entities to provide quality
+                            programs
+                            to our participants in an effective manner while emphasizing customer satisfaction,
+                            stability,
+                            financial solvency and cost.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Form</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phone" name="phone"
+                                    placeholder="Enter your phone number">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-select" id="subject" name="subject" required>
+                                    <option value="">Choose a subject</option>
+                                    <option value="employee-benefits">Employee Benefits</option>
+                                    <option value="wellness-center">Wellness Center</option>
+                                    <option value="workers-comp">Worker's Comp</option>
+                                    <option value="property-casualty">Property / Casualty</option>
+                                    <option value="governance">Governance</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5"
+                                    placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 bg-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Locations</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>TCSIG Admin Office</strong></li>
+                            <li>530-822-5299</li>
+                            <li>400 Plumas Blvd., Suite 210</li>
+                            <li>Yuba City, CA 95991</li>
+                            <li class="mt-3"><strong>TCSIG Wellness Center</strong></li>
+                            <li>530-822-5500</li>
+                            <li>1174 Live Oak Blvd.</li>
+                            <li>Yuba City, CA 95991</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <p class="text-center">&copy; Tri-County Schools Insurance Group</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
