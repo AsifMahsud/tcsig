@@ -77,14 +77,8 @@
                                     <li class="nav-item">
                                         <a class="nav-link" aria-current="page" href="./about-us.html">About Us</a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="./employee-benefits.html"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Employee Benefits
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="./medical.html">Medical</a></li>
-                                        </ul>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./employee-benefits.html">Employee Benefits</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Wellness Center</a>
@@ -125,167 +119,61 @@
             </div>
         </div>
     </header>
-    <!-- welcome banner -->
-    <div class="container-fluid p-0">
-        <div class="row align-items-center w-100">
-            <div class="col-md-12 p-0">
-                <div class="banner-video">
-                    <video autoplay muted loop>
-                        <source src="./images/abstract-12909.mp4" type="video/mp4">
-                    </video>
-                    <div
-                        class="banner-buttons position-absolute start-0 end-0 d-flex flex-wrap justify-content-center flex-column flex-lg-row">
-                        <a href="#about-us" class="btn btn-lg btn-primary">About Us</a>
-                        <a href="#employee-benefits" class="btn btn-lg btn-primary">Employee Benefits</a>
-                        <a href="#wellness-center" class="btn btn-lg btn-primary">Wellness Center</a>
-                        <a href="#workers-comp" class="btn btn-lg btn-primary">Worker's Comp</a>
-                        <a href="#property-casualty" class="btn btn-lg btn-primary">Property/Casualty</a>
-                    </div>
+    <!-- hero section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to our Awesome Website</h1>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Anthem Find Provider</a>
+                    <a href="#" class="btn btn-primary">Anthem Portal Login</a>
+                    <a href="#" class="btn btn-primary">Wellness Center</a>
+                    <a href="#" class="btn btn-primary">Kaiser HMO</a>
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
     <style>
-        .modal-backdrop {
-            --bs-backdrop-zindex: 1;
-        }
-
-        .banner-video {
+        .hero-section {
+            background-image: url('./images/1920x800-2.jpeg');
+            background-size: cover;
+            height: 600px;
             position: relative;
-            height: 100vh;
-            overflow: hidden;
         }
 
-        .banner-video video {
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
         }
 
-        .banner-buttons {
-            bottom: 10%;
-            z-index: 1;
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
         }
     </style>
-
-    <!-- end of welcome banner -->
-    <!-- about us section -->
-    <section id="about-us" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 pb-5 pb-lg-0">
-                    <h2 class="stroke mb-4 lh-base">About Us/Mission</h2>
-                    <p>The Tri-County Schools Insurance Group, Joint Powers Authority (JPA), was formed in 1983 for the
-                        purpose of establishing and maintaining property, liability, health, dental, vision and group
-                        life. In 2019, TCSIG JPA now includes a workers' compensation program.</p>
-                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x400" alt="About Us Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of about us -->
-    <!-- employee benefits -->
-    <section id="employee-benefits" class="py-5">
-        <div class="container">
-            <div class="row align-items-center flex-lg-row-reverse">
-                <div class="col-md-6 pb-5 pb-lg-0">
-                    <h2 class="stroke mb-4 lh-base">Employee Benefits</h2>
-                    <p>The TCSIG Value</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Multiple Rich Plan Design Options
-                        </li>
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>0% rate increase - 6 years in a
-                            row</li>
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Wellness Center</li>
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Plan Enhancements</li>
-                    </ul>
-                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x400" alt="Employee Benefits Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of employee benefits -->
-    <!-- wellness center -->
-    <section id="wellness-center" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 pb-5 pb-lg-0">
-                    <h2 class="stroke mb-4 lh-base">Wellness Center</h2>
-                    <p>To remove financial barriers and expand access to COVID-19 testing, TCSIG has the following
-                        solution
-                        to help you combat COVID:</p>
-                    <ol>
-                        <li>
-                            <a href="https://forms.zohopublic.com/tcsig/form/WellnessCenterCovidTestingRequest/formperma/TIQbaJMdnswC8Amhty1h_wIWDSVnxhFiaybalHDrJTw"
-                                target="_blank">Click here</a> for the TCSIG Wellness Center at-home test kits. Use
-                            authorization number 227193.
-                        </li>
-                        <li>
-                            <a href="https://www.tcsig.com/_files/ugd/495bc1_320c9d1aa61b44a5b162ee2fe6671945.pdf"
-                                target="_blank">Click here</a> for the OTC COVID TEST CLAIM FORM for any test kits you
-                            purchase on your own to submit for reimbursement through HealthComp. The maximum
-                            reimbursement
-                            will be $12.
-                        </li>
-                    </ol>
-                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x400" alt="Wellness Center Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of wellness center -->
-    <!-- wordkers comp -->
-    <section id="workers-comp" class="py-5">
-        <div class="container">
-            <div class="row align-items-center flex-lg-row-reverse">
-                <div class="col-md-6 pb-5 pb-lg-0">
-                    <div class="section-title mb-4">
-                        <h2 class="stroke mb-1 lh-base">Worker's Compensation</h2>
-                        <div class="title-line"></div>
-                    </div>
-                    <ul class="list-unstyled">
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Ownership and control</li>
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Non-profit organization</li>
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Risk management</li>
-                    </ul>
-                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x400" alt="Worker's Comp Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of  wordkers comp -->
-    <!-- property casualty -->
-    <section id="property-casualty" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 pb-5 pb-lg-0">
-                    <h2 class="stroke mb-4 lh-base">Property/Casualty</h2>
-                    <p class="mb-4">Broad coverages provided to you and your districts.</p>
-                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x400" alt="Property/Casualty Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of property casualty -->
+    <!-- end of hero section -->
     <!-- footer -->
     <div class="d-flex flex-column">
         <footer class="bg-secondary text-white mt-auto">
