@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="container position-absolute top-0 start-0 end-0">
+    <header class="container">
         <!-- header container -->
         <div class="bg-secondary mx-2 d-lg-flex">
             <!-- logo -->
@@ -26,40 +26,6 @@
                 <img src="./images/TCSIG-Logo.jpeg" class="img-fluid" alt="tcsig site icon" />
             </div>
             <div class="header-content w-100">
-                <!-- secondary nav and chat icon -->
-                <div class="secondary-nav popover-header my-2 my-lg-0 mx-4">
-                    <!-- secondary nav -->
-                    <nav class="navbar navbar-expand-lg bg-secondary">
-                        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <i class="fa-solid fa-bars"></i>
-                        </button>
-                        <div class="position-relative w-100">
-                            <div class="collapse navbar-collapse position-absolute w-100 bg-light p-4 p-lg-0 rounded"
-                                id="navbarNavDropdown">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Governance</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">News</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Documents</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- chat icon -->
-                        <a href="#"><img src="./images/LynnSisnerosBitmoji.png" class="img-fluid chat-icon"
-                                alt="TCSIG personality. Lynn bitmoji" /></a>
-                    </nav>
-                </div>
-                <!-- nav and search -->
                 <div class="mx-4 mx-lg-0 d-flex justify-content-between justify-content-lg-start align-items-baseline">
                     <!-- primary nav -->
                     <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
@@ -77,8 +43,20 @@
                                     <li class="nav-item">
                                         <a class="nav-link" aria-current="page" href="./about-us.html">About Us</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./employee-benefits.html">Employee Benefits</a>
+                                    <li class="nav-item dropdown" id="employee-benefits-dropdown">
+                                        <a class="nav-link dropdown-toggle" href="./employee-benefits.html">Employee
+                                            Benefits</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="./medical.html">Medical</a></li>
+                                            <li><a class="dropdown-item" href="./medical.html">Dental</a></li>
+                                            <li><a class="dropdown-item" href="./medical.html">Vision</a></li>
+                                            <li><a class="dropdown-item" href="./medical.html">Prescription RX</a></li>
+                                            <li><a class="dropdown-item" href="./medical.html">Mental Health / EAP</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="./medical.html">Chiropractic Services</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="./medical.html">Telemedicine</a></li>
+                                        </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Wellness Center</a>
@@ -116,24 +94,362 @@
                         </div>
                     </div>
                 </div>
+                <!-- secondary nav and chat icon -->
+                <div class="secondary-nav my-2 my-lg-0 mx-4">
+                    <!-- secondary nav -->
+                    <nav class="navbar navbar-expand-lg bg-secondary">
+                        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="position-relative w-100">
+                            <div class="collapse navbar-collapse position-absolute w-100 bg-light p-4 p-lg-0 rounded"
+                                id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Governance</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">News</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Documents</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- chat icon -->
+                        <a href="#"><img src="./images/LynnSisnerosBitmoji.png" class="img-fluid chat-icon"
+                                alt="TCSIG personality. Lynn bitmoji" width="80" /></a>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
-    <!-- hero section -->
     <section class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1>Welcome to our Awesome Website</h1>
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">Anthem Find Provider</a>
-                    <a href="#" class="btn btn-primary">Anthem Portal Login</a>
-                    <a href="#" class="btn btn-primary">Wellness Center</a>
-                    <a href="#" class="btn btn-primary">Kaiser HMO</a>
+        <div class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0">
+            <div class="container h-100">
+                <div class="hero-content">
+                    <h1 class="text-center"><span class="fs-3 text-light">EMPLOYEE BENEFITS / </span><span
+                            class="stroke-full">MEDICAL</span></h1>
+                    <div class="hero-buttons flex-column flex-lg-row">
+                        <a href="#" class="btn btn-primary bg-primary">Anthem Find Provider</a>
+                        <a href="#" class="btn btn-primary bg-primary">Anthem Portal Login</a>
+                        <a href="#" class="btn btn-primary bg-primary">Wellness Center</a>
+                        <a href="#" class="btn btn-primary bg-primary">Kaiser HMO</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- hero section -->
+    <!-- table -->
+    <section class="container my-5">
+        <div class="table-responsive">
+            <table class="table text-center">
+                <thead class="align-middle">
+                    <tr>
+                        <th colspan="3">
+                            <div class="logo px-1 py-1">
+                                <img src="./images/TCSIG-Logo.jpeg" class="img-fluid" alt="tcsig site icon">
+                            </div>
+                        </th>
+                        <th colspan="3" class="text-end">Tri-County Schools Insurance Group<br>Summary of Benefits <span
+                                class="fs-5">2022/2023</span></th>
+                    </tr>
+                    <tr class="bg-secondary text-white">
+                        <th scope="col"></th>
+                        <th scope="col">PREMIER PLUS</th>
+                        <th scope="col">PREMIER</th>
+                        <th scope="col">STANDARD</th>
+                        <th scope="col">BASIC</th>
+                        <th scope="col">
+                            <sup>Consumer Driven Health Plan</sup><br>CDHP<br><sub>(HSA Qualified)</sub>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="text-start">ACA Metal Ranking</th>
+                        <th>Platinum</th>
+                        <th>Platinum</th>
+                        <th>Gold</th>
+                        <th>Gold</th>
+                        <th>Silver</th>
+                    </tr>
+                    <tr>
+                        <th class="text-start">Maximum Lifetime</th>
+                        <th>No Limit</th>
+                        <th>No Limit</th>
+                        <th>No Limit</th>
+                        <th>No Limit</th>
+                        <th>No Limit</th>
+                    </tr>
+                    <tr>
+                        <th class="text-start">Deductible</th>
+                        <td colspan="4"></td>
+                        <th>*</th>
+                    </tr>
+                    <tr>
+                        <th class="text-start ps-4">Individual</th>
+                        <td>$75</td>
+                        <td>$500</td>
+                        <td>$750</td>
+                        <td>$1,000</td>
+                        <td>$1,500</td>
+                    </tr>
+                    <tr>
+                        <th class="text-start ps-4">Family Maximum</th>
+                        <td>$150</td>
+                        <td>$1,000</td>
+                        <td>$1,500</td>
+                        <td>$2,000</td>
+                        <td>$3,000</td>
+                    </tr>
+                    <tr>
+                        <th class="text-start">Coinsurance <i class="small">(after deductible)</i></th>
+                        <td>80% / 20%</td>
+                        <td>90% / 10%</td>
+                        <td>80% / 20%</td>
+                        <td>70% / 30%</td>
+                        <td>50% / 50%</td>
+                    </tr>
+                    <tr>
+                        <th colspan="6" class="text-start">Out Of Pocket Max <i class="small">(includes PPO MEDICAL
+                                copays, deductible, coinsurance)</i></th>
+                    </tr>
+                    <tr>
+                        <th class="text-start ps-4 small">Individual</th>
+                        <td>$475</td>
+                        <td>$2,500</td>
+                        <td>$3,500</td>
+                        <td>$5,000</td>
+                        <td>$5,000</td>
+                    </tr>
+                    <tr>
+                        <th class="text-start ps-4 small">Family Maximum</th>
+                        <td>$950</td>
+                        <td>$5,000</td>
+                        <td>$7,000</td>
+                        <td>$10,000</td>
+                        <td>$10,000</td>
+                    </tr>
+                    <tr>
+                        <th class="text-start">Preventive Services</th>
+                        <td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <th class="text-start ps-4 small">Preventive Physical Exam/Labs</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                    </tr>
+                    <tr>
+                        <th class="text-start ps-4 small">Preventive Child Care</th>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                    </tr>
+                    <tr>
+                        <th class="text-start ps-4 small">Preventive Immunizations</th>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                    </tr>
+                    <tr>
+                        <th class="text-start">Wellness Center Services</th>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                    </tr>
+                    <tr>
+                        <th class="text-start">Tele-Medicine Visit</th>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td>No Copay</td>
+                        <td class="small">Subj. to ded./coins.</td>
+                    </tr>
+                    <tr>
+                        <th class="text-start">Office Visit Copay</th>
+                        <td>$10</td>
+                        <td>$15</td>
+                        <td>$20</td>
+                        <td>$20</td>
+                        <td class="small">Subj. to ded./coins.</td>
+                    </tr>
+                    <tr>
+                        <th class="text-start">Chiropractic Visit Copay</th>
+                        <td>$20</td>
+                        <td>$20</td>
+                        <td>$20</td>
+                        <td>$20</td>
+                        <td class="small">Subj. to ded./coins.</td>
+                    </tr>
+                    <tr>
+                        <th class="text-start">Hospital Emergency Room (ER)</th>
+                        <td class="small">$50/visit + Coinsurance</td>
+                        <td class="small">$50/visit + Coinsurance</td>
+                        <td class="small">$50/visit + Coinsurance</td>
+                        <td class="small">$50/visit + Coinsurance</td>
+                        <td class="small">Subj. to ded./coins.</td>
+                    </tr>
+                    <tr>
+                        <th class="text-start">Mental Health Counselor Copay</th>
+                        <td>$10</td>
+                        <td>$15</td>
+                        <td>$20</td>
+                        <td>$20</td>
+                        <td class="small">Subj. to ded./coins.</td>
+                    </tr>
+                    <tr class="bg-secondary">
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <th class="text-start">Prescription Drugs</th>
+                        <th colspan="2" class="text-decoration-underline">Retail (up to 31 day supply)</th>
+                        <th colspan="2" class="text-decoration-underline">90 Day Supply (Mail Order or Retail)</th>
+                        <td class="small">Subj. to ded./coins.</td>
+                    </tr>
+                    <tr>
+                        <th class="small text-start ps-4">Generic (tier 1)</th>
+                        <td colspan="2">$5 copay</td>
+                        <td colspan="2">$10 copay</td>
+                        <td rowspan="3" class="small">(pay up front at pharmacy until deductible/coins. met)</td>
+                    </tr>
+                    <tr>
+                        <th class="small text-start ps-4">Preferred Brand (tier 2)</th>
+                        <td colspan="2">25% to max of $35</td>
+                        <td colspan="2">$50 copay</td>
+                    </tr>
+                    <tr>
+                        <th class="small text-start ps-4">Non-Preferred (tier 3)</th>
+                        <td colspan="2">45% to max of $70</td>
+                        <td colspan="2">$90 copay</td>
+                    </tr>
+                    <tr class="bg-secondary">
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="6" class="text-start">Maximum Annual RX Copays: <i class="small">(After your Rx
+                                copays reach the following amount, then TCSIG pays 100% of Rx for the rest of year)</i>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="text-start ps-4">Individual</th>
+                        <td>$1,000</td>
+                        <td>$1,000</td>
+                        <td>$1,000</td>
+                        <td>$1,000</td>
+                        <td>Subj. to ded./coins.</td>
+                    </tr>
+                    <tr>
+                        <th class="text-start ps-4">Family Maximum</th>
+                        <td>$2,000</td>
+                        <td>$2,000</td>
+                        <td>$2,000</td>
+                        <td>$2,000</td>
+                        <td>Subj. to ded./coins.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container text-center">
+            <p>* For CDHP only - per IRS guidelines, when 2 or more persons on plan, the family deductible of $3,000
+                must be met prior to any plan payment (except preventive paid at 100%).</p>
+            <p>This outline does not constitute the group policy and is not a contract of insurance. It explains in
+                simple language the essential features of the group benefits provided. All rights with respect to the
+                benefits of an insured person will be governed solely by the group policy. <br><a
+                    href="https://www.tcsig.com/documents" class="btn btn-primary bg-secondary my-2">Click here for Plan
+                    Document Complete Copy</a></p>
+        </div>
+    </section>
+    <!-- Perscription RX Co-pay structure -->
+    <section class="benefits-section">
+        <div class="container text-center">
+            <hr class="mb-5">
+            <div class="row justify-content-lg-between">
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card border rounded p-3 m-3">
+                        <h2 class="benefit-title">Perscription RX Co-pay <span class="stroke-full mb-3">structure</span>
+                        </h2>
+                        <img src="./images/credit-card.png" alt="Benefit 1 Logo" width="100"
+                            class="benefit-logo mb-3 img-fluid">
+                        <p class="benefit-description">Prescription Co-Pay Structure at Carelon Rx offers affordable
+                            medication options with copays based on drug type. Choose from generic, preferred brand, and
+                            non-preferred brand drugs with copays ranging from $5 to $70. Enjoy savings through Retail
+                            and Mail Order Pharmacy options for 31-day and 90-day supplies. Contact Carelon Rx for more
+                            details.</p>
+                        <a href="#" class="btn btn-primary bg-secondary">Discover Co-Pay Savings</a>
+                    </div>
+                    <div class="benefit-card border rounded p-3 m-3">
+                        <h2 class="benefit-title mb-3 stroke-full">Healthcare Bluebook</h2>
+                        <img src="./images/healthcare-bluebook.jpeg" alt="Benefit 5 Logo"
+                            class="benefit-logo img-fluid mb-3">
+                        <p class="benefit-description">Healthcare Bluebook is a FREE added healthcare benefit to help
+                            you shop for care, compare facilities, save money on healthcare services, and earn rewards.
+                            The web and mobile applications make it easy to save money on hundreds of the most common
+                            medical services and procedures by showing you the cost ranges in your area, and providing
+                            you with a selection of FAIR PRICE facilities.</p>
+                        <a href="https://www.healthcarebluebook.com/" target="_blank"
+                            class="btn btn-primary bg-secondary">Visit Healthcare Bluebook</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card bg-light border rounded p-3 m-3">
+                        <h2 class="benefit-title mb-3 stroke-full">Wellness Center</h2>
+                        <img src="./images/tcsig_wellnesscenterlogo_wtag.webp" width="200" alt="Benefit 2 Logo"
+                            class="benefit-logo mb-3 img-fluid">
+                        <p>Managed by Acorn Health Group<br>Located at 1174 Live Oak Boulevard in Yuba City<br>Call
+                            530.822.5500 for an appointment </p>
+                        <p class="text-start">Services are provided at no cost to our members. Make an appointment to be
+                            seen for your routine physical, treating your cold or flu symptoms, chronic illness to name
+                            just a few of the available services provided by the expert staff </p>
+                        <p> Wellness Center Hours are:<br> Mon -Fri: 8am-7pm<br> Saturday: 9am-3pm<br> Sunday:
+                            Closed<br> **Wellness Center is closed on the second Tuesday of every month from 11:00AM to
+                            12:00PM </p>
+                        <a href="#" class="btn btn-primary bg-secondary">Visit TCSIG Wellness Center page</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card border rounded p-3 m-3">
+                        <h2 class="benefit-title mb-3 stroke-full">Telemedicine</h2>
+                        <img src="./images/telemedicine.webp" alt="Benefit 3 Logo" width="300"
+                            class="benefit-logo img-fluid rounded mb-3">
+                        <p class="benefit-description">TCSIG is here to care for you. On call providers are available to
+                            provide you with the best care possible. TCSIG has several telemedicine options for you to
+                            discover. Quality care right from your smartphone or computer.</p>
+                        <a href="#" class="btn btn-primary bg-secondary">Visit Telemedicine page</a>
+                    </div>
+                    <div class="benefit-card border rounded p-3 m-3">
+                        <h2 class="benefit-title mb-3 stroke-full">Kaiser HMO</h2>
+                        <img src="./images/kaiser-permanente-logo-png-transparent-1.png" alt="Benefit 4 Logo"
+                            width="300" class="benefit-logo img-fluid mb-3">
+                        <p class="benefit-description">We also offer our members the option of selecting Kaiser
+                            Permanente as an HMO option. Members on the Kaiser HMO Plan can call toll-free (800)
+                            464-4000 with coverage questions</p>
+                        <a href="https://www.kaiserpermanente.org" target="_blank"
+                            class="btn btn-primary bg-secondary">Visit Kaiser Permanente</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Wellness Center -->
+    <!-- Telemedicine -->
+    <!-- Kaiser HMO -->
+    <!-- Healthcare Bluebook -->
     <style>
         .hero-section {
             background-image: url('./images/1920x800-2.jpeg');
@@ -183,10 +499,8 @@
                         <h5>About Company</h5>
                         <img src="./images/TCSIG-Logo.jpeg" alt="Company Logo" class="img-fluid mb-3" width="250">
                         <p>Our Mission is to pool risk and purchasing power of public entities to provide quality
-                            programs
-                            to our participants in an effective manner while emphasizing customer satisfaction,
-                            stability,
-                            financial solvency and cost.</p>
+                            programs to our participants in an effective manner while emphasizing customer satisfaction,
+                            stability, financial solvency and cost.</p>
                     </div>
                     <div class="col-md-4">
                         <h5>Contact Form</h5>

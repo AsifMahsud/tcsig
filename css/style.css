@@ -11,8 +11,11 @@
     --bs-link-color: rgb(var(--bs-secondary-rgb));
 }
 
+.nav-link.active {
+    background-color: rgb(var(--bs-primary-rgb));
+}
+
 .chat-icon {
-    max-width: 100px;
     position: absolute;
     top: -32px;
     right: -10px;
@@ -48,8 +51,12 @@
 
 @media (min-width:992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
-        --bs-nav-link-color: rgba(255, 255, 255, 0.55);
+        --bs-nav-link-color: rgba(255, 255, 255, 1);
         --bs-nav-link-hover-color: rgba(255, 255, 255, 0.75);
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
     }
 
     .secondary-nav {
@@ -62,10 +69,6 @@
 
     #navbarNavDropdown {
         position: unset !important;
-    }
-
-    .chat-icon {
-        top: 0 !important;
     }
 
     .header-content {
@@ -123,7 +126,7 @@
     position: relative;
 }
 
-h2.stroke::after {
+.stroke::after {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -159,4 +162,8 @@ header {
     width: 100%;
     height: 3px;
     background-color: rgb(var(--bs-primary-rgb));
+}
+
+.secondary-nav button {
+    --bs-border-width: 0;
 }
