@@ -16,10 +16,49 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/index.js"></script>
+    <style>
+        .hero-section {
+            background-image: url('./images/vision.jpg');
+            background-size: cover;
+            height: 600px;
+            position: relative;
+        }
+
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="container position-absolute top-0 start-0 end-0">
+    <header class="container">
         <!-- header container -->
         <div class="bg-secondary mx-2 d-lg-flex">
             <!-- logo -->
@@ -131,163 +170,21 @@
             </div>
         </div>
     </header>
-    <!-- welcome banner -->
-    <div class="container-fluid p-0">
-        <div class="row align-items-center w-100">
-            <div class="col-md-12 p-0">
-                <div class="banner-video">
-                    <video autoplay muted loop>
-                        <source src="./images/abstract-12909.mp4" type="video/mp4">
-                    </video>
-                    <div
-                        class="banner-buttons position-absolute start-0 end-0 d-flex flex-wrap justify-content-center flex-column flex-lg-row">
-                        <a href="#about-us" class="btn btn-lg btn-primary">About Us</a>
-                        <a href="#employee-benefits" class="btn btn-lg btn-primary">Employee Benefits</a>
-                        <a href="#wellness-center" class="btn btn-lg btn-primary">Wellness Center</a>
-                        <a href="#workers-comp" class="btn btn-lg btn-primary">Worker's Comp</a>
-                        <a href="#property-casualty" class="btn btn-lg btn-primary">Property/Casualty</a>
+    <section class="hero-section mb-5">
+        <div class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0">
+            <div class="container h-100">
+                <div class="hero-content">
+                    <h1 class="text-center"><span class="fs-3 text-light">EMPLOYEE BENEFITS / </span><span
+                            class="stroke-full">VISION</span></h1>
+                    <div class="hero-buttons flex-column flex-lg-row">
+                        <a href="https://www.vsp.com/" target="_blank" class="btn btn-primary bg-primary">VSP FIND
+                            PROVIDER</a>
+                        <a href="https://apias.vsp.com/as/authorization.oauth2?client_id=vsp-memberportal-ui&scope=openid%20auth_member_rest%20profile%20read:vc.find_a_doctor%20provider_view%20read:vc.memberusermanagement%20write:vc.memberusermanagement%20read:vc.memberbenefits%20write:vc.memberbenefits%20write:vc.find_a_doctor%20finance_view%20write:vc.finance%20read:vc.outofnetworkclaim%20write:vc.outofnetworkclaim%20ecom_view&redirect_uri=https://apias.vsp.com/acs2/redirect&response_type=code&state=vsp-memberportal-ui.043593b4-ff06-11ed-b15d-c1b67a28fd1e"
+                            target="_blank" class="btn btn-primary bg-primary">VSP PORTAL LOGIN</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <style>
-        .modal-backdrop {
-            --bs-backdrop-zindex: 1;
-        }
-
-        .banner-video {
-            position: relative;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .banner-video video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .banner-buttons {
-            bottom: 10%;
-            z-index: 1;
-        }
-    </style>
-    <!-- end of welcome banner -->
-    <!-- about us section -->
-    <section id="about-us" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 pb-5 pb-lg-0">
-                    <h2 class="stroke mb-4 lh-base">About Us/Mission</h2>
-                    <p>The Tri-County Schools Insurance Group, Joint Powers Authority (JPA), was formed in 1983 for the
-                        purpose of establishing and maintaining property, liability, health, dental, vision and group
-                        life. In 2019, TCSIG JPA now includes a workers' compensation program.</p>
-                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x400" alt="About Us Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
     </section>
-    <!-- end of about us -->
-    <!-- employee benefits -->
-    <section id="employee-benefits" class="py-5">
-        <div class="container">
-            <div class="row align-items-center flex-lg-row-reverse">
-                <div class="col-md-6 pb-5 pb-lg-0">
-                    <h2 class="stroke mb-4 lh-base">Employee Benefits</h2>
-                    <p>The TCSIG Value</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Multiple Rich Plan Design Options
-                        </li>
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>0% rate increase - 6 years in a
-                            row</li>
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Wellness Center</li>
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Plan Enhancements</li>
-                    </ul>
-                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x400" alt="Employee Benefits Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of employee benefits -->
-    <!-- wellness center -->
-    <section id="wellness-center" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 pb-5 pb-lg-0">
-                    <h2 class="stroke mb-4 lh-base">Wellness Center</h2>
-                    <p>To remove financial barriers and expand access to COVID-19 testing, TCSIG has the following
-                        solution to help you combat COVID:</p>
-                    <ol>
-                        <li>
-                            <a href="https://forms.zohopublic.com/tcsig/form/WellnessCenterCovidTestingRequest/formperma/TIQbaJMdnswC8Amhty1h_wIWDSVnxhFiaybalHDrJTw"
-                                target="_blank">Click here</a> for the TCSIG Wellness Center at-home test kits. Use
-                            authorization number 227193.
-                        </li>
-                        <li>
-                            <a href="https://www.tcsig.com/_files/ugd/495bc1_320c9d1aa61b44a5b162ee2fe6671945.pdf"
-                                target="_blank">Click here</a> for the OTC COVID TEST CLAIM FORM for any test kits you
-                            purchase on your own to submit for reimbursement through HealthComp. The maximum
-                            reimbursement will be $12.
-                        </li>
-                    </ol>
-                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x400" alt="Wellness Center Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of wellness center -->
-    <!-- wordkers comp -->
-    <section id="workers-comp" class="py-5">
-        <div class="container">
-            <div class="row align-items-center flex-lg-row-reverse">
-                <div class="col-md-6 pb-5 pb-lg-0">
-                    <div class="section-title mb-4">
-                        <h2 class="stroke mb-1 lh-base">Worker's Compensation</h2>
-                        <div class="title-line"></div>
-                    </div>
-                    <ul class="list-unstyled">
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Ownership and control</li>
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Non-profit organization</li>
-                        <li><i class="fa-solid fa-circle-check text-primary px-2"></i>Risk management</li>
-                    </ul>
-                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x400" alt="Worker's Comp Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of  wordkers comp -->
-    <!-- property casualty -->
-    <section id="property-casualty" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 pb-5 pb-lg-0">
-                    <h2 class="stroke mb-4 lh-base">Property/Casualty</h2>
-                    <p class="mb-4">Broad coverages provided to you and your districts.</p>
-                    <a href="#" class="btn px-4 py-2 btn-outline-primary">LEARN MORE</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x400" alt="Property/Casualty Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of property casualty -->
     <!-- footer -->
     <div class="d-flex flex-column">
         <footer class="bg-secondary text-white mt-auto">

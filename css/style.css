@@ -45,6 +45,10 @@
     --bs-btn-active-border-color: transparent;
 }
 
+.btn:hover {
+    background-color: rgb(var(--bs-secondary-rgb)) !important;
+}
+
 .modal {
     background: rgba(255, 255, 255, 0.95);
 }
