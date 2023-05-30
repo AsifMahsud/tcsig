@@ -50,6 +50,11 @@
 }
 
 @media (min-width:992px) {
+    .desktop-vertical {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+    }
+
     .navbar-expand-lg .navbar-nav .nav-link {
         --bs-nav-link-color: rgba(255, 255, 255, 1);
         --bs-nav-link-hover-color: rgba(255, 255, 255, 0.75);

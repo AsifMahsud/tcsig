@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HOME | TCSIG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" sizes="192x192" href="./images/site-icon.png">
+    <meta http-equiv="content-language" content="en-us">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <header class="container">
+        <!-- header container -->
+        <div class="bg-secondary mx-2 d-lg-flex">
+            <!-- logo -->
+            <div class="logo px-4 py-4 bg-primary">
+                <img src="./images/TCSIG-Logo.jpeg" class="img-fluid" alt="tcsig site icon" />
+            </div>
+            <div class="header-content w-100">
+                <div class="mx-4 mx-lg-0 d-flex justify-content-between justify-content-lg-start align-items-baseline">
+                    <!-- primary nav -->
+                    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler px-4 py-3 bg-primary text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown2"
+                                aria-controls="navbarNavDropdown2" aria-expanded="false" aria-label="Toggle navigation">
+                                MENU <i class="fa-solid fa-bars ps-2"></i>
+                            </button>
+                            <div class="collapse navbar-collapse px-2" id="navbarNavDropdown2">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./about-us.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item dropdown" id="employee-benefits-dropdown">
+                                        <a class="nav-link dropdown-toggle" href="./employee-benefits.html">Employee
+                                            Benefits</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="./medical.html">Medical</a></li>
+                                            <li><a class="dropdown-item" href="./dental.html">Dental</a></li>
+                                            <li><a class="dropdown-item" href="./medical.html">Vision</a></li>
+                                            <li><a class="dropdown-item" href="./medical.html">Prescription RX</a></li>
+                                            <li><a class="dropdown-item" href="./medical.html">Mental Health / EAP</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="./medical.html">Chiropractic Services</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="./medical.html">Telemedicine</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Wellness Center</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Worker's Comp</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Property / Casualty</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- search icon -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <button type="button" class="btn btn-primary btn-lg position-fixed top-0 end-0"
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="fa fa-times text-dark fs-1"></i>
+                                </button>
+                                <div class="modal-body">
+                                    <form class="searchform" action="#">
+                                        <input type="search" class="form-control" name="search" value="" id="search"
+                                            placeholder="Type keyword(s) here and hit Enter …" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- secondary nav and chat icon -->
+                <div class="secondary-nav my-2 my-lg-0 mx-4">
+                    <!-- secondary nav -->
+                    <nav class="navbar navbar-expand-lg bg-secondary">
+                        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="position-relative w-100">
+                            <div class="collapse navbar-collapse position-absolute w-100 bg-light p-4 p-lg-0 rounded"
+                                id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Governance</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">News</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Documents</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- chat icon -->
+                        <a href="#"><img src="./images/LynnSisnerosBitmoji.png" class="img-fluid chat-icon"
+                                alt="TCSIG personality. Lynn bitmoji" width="80" /></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section mb-5">
+        <div class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0">
+            <div class="container h-100">
+                <div class="hero-content">
+                    <h1 class="text-center"><span class="fs-3 text-light">EMPLOYEE BENEFITS / </span><span
+                            class="stroke-full">DENTAL</span></h1>
+                    <div class="hero-buttons flex-column flex-lg-row">
+                        <a href="https://www1.deltadentalins.com/" target="_blank"
+                            class="btn btn-primary bg-primary">FIND A DELTA DENTAL DENTIST</a>
+                        <a href="https://www1.deltadentalins.com/login.html" target="_blank"
+                            class="btn btn-primary bg-primary">DELTA PORTAL LOGIN</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- hero section -->
+    <section class="container mb-5">
+        <div class="row">
+            <h2 class="text-center mb-4">Delta Dental Customer Service: 866-499-3001</h2>
+            <p class="text-center">Tri-County Schools Insurance Group (Group No. 7084) offers two very distinct dental
+                programs through Delta Dental of California.</p>
+            <div class="col-md-6">
+                <p> The first is the long-standing, popular plan referred to as the Delta Premier Plan. Under this
+                    program, Delta pays 70 percent of the approved fees for covered diagnostic, preventive, basic, cast,
+                    and crown benefits during the first year you are eligible. This percentage will increase 10 percent
+                    each year (to a maximum of 100 percent) for each enrollee, provided that person visits the dentist
+                    at least once during the year. If any enrollee does not use the program during a calendar year, the
+                    percentage remains at the level reached the previous year. If an enrollee becomes ineligible for
+                    benefits and later regains eligibility, the percentage will drop back to 70 percent. <br><br>In
+                    addition, effective July 1, 2006, an enhancement of $250 was added to the Delta Dental Premier
+                    program when you use the service of a Delta DPO/PPO dentist. For example, if you have an annual
+                    maximum of $2,000 you have an additional $250 to use above your annual maximum if you use a Delta
+                    DPO/PPO dentist for the additional $250 of work. <br><br> The second option is referred to as the
+                    Delta Preferred Option (DPO). Under this program, Delta pays 100 percent of the approved fees for
+                    covered diagnostic, preventive, basic, cast, and crown benefits provided that the eligible enrollee
+                    has these services furnished by a dentist participating in the Delta Preferred Option (DPO) program
+                    through Delta Dental Plan of California. If the services are provided by a non-participating
+                    provider, covered benefits will only be reimbursed at 50 percent. </p>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <img src="./images/dental-2.jpg" alt="Delta Dental Image" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="./files/2022 Delta Dental Plan Book.pdf" class="btn btn-primary me-3 bg-primary w-100 mb-2"
+                    target="_blank">DELTA DENTAL PLAN BOOK</a>
+            </div>
+            <div class="col-md-4">
+                <a href="./files/delta-dental-premier--plan-summary.pdf"
+                    class="btn btn-primary me-3 bg-primary w-100 mb-2" target="_blank">DELTA DENTAL PREMIER SUMMARY</a>
+            </div>
+            <div class="col-md-4">
+                <a href="./files/delta-dental-preferred-option-plan-summary.pdf"
+                    class="btn btn-primary me-3 bg-primary w-100 mb-2" target="_blank">DELTA DENTAL PREFERRED OPTION
+                    SUMMARY</a>
+            </div>
+            <div class="col-md-4">
+                <a href="./files/delta-dental-of-ca-claimform-enterprise.pdf"
+                    class="btn btn-primary me-3 bg-primary w-100 mb-2" target="_blank">DELTA DENTAL CLAIM FORM</a>
+            </div>
+            <div class="col-md-4">
+                <a href="./files/Find a Delta Dentist Instructions.pdf"
+                    class="btn btn-primary me-3 bg-primary w-100 mb-2" target="_blank">FIND A DELTA DENTAL DENTIST</a>
+            </div>
+            <div class="col-md-4">
+                <a href="./files/4.-orthodontics-ppo-pre.pdf" class="btn btn-primary me-3 bg-primary w-100 mb-2"
+                    target="_blank">ORTHODONTIC COVERAGE</a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-primary me-3 bg-primary w-100 mb-2" target="_blank">PRE-TREATMENT
+                    ESTIMATE</a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-primary me-3 bg-primary w-100 mb-2" target="_blank">DELTA DENTAL WEBSITE
+                    INTRODUCTION</a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="btn btn-primary me-3 bg-primary w-100 mb-2" target="_blank">DENTAL WELLNESS
+                    MATERIALS</a>
+            </div>
+        </div>
+    </section>
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col-md-6 text-center mb-2">
+                <img src="./images/where-id-card.jpg" alt="where id card"
+                    class="img-fluid rounded-circle border-5 border" style="max-width: 300px" />
+            </div>
+            <div class="col-md-6 align-self-center">
+                <h2 class="fs-1 text-center">Where’s My ID Card?</h2>
+                <p class="lead fs-3 text-center">If you’ve been looking for your dental plan ID card, we have good news
+                    for you: <strong>You don’t need one!</strong></p>
+                <p class="lead fs-5 text-center">Just tell your dental office the <strong class="text-primary">Delta
+                        Dental company</strong> through which you receive benefits and provide your <strong
+                        class="text-primary">name</strong>, your <strong class="text-primary">date of birth</strong>,
+                    your <strong class="text-primary">enrollee ID number</strong> (or Social Security number) and the
+                    <strong class="text-primary">name of your employer</strong>.</p>
+                <p class="lead fs-5 text-center">Got dependents on your plan? Tell them to provide your details.</p>
+            </div>
+            <div class="row">
+                <h3 class="text-primary text-center">Want an ID card anyway?</h3>
+                <div class="col-md-6 text-center">
+                    <div class="col">
+                        <img src="./images/desktop.jpg" alt="id card desktop" class="img-fluid"
+                            style="max-width: 300px" />
+                    </div>
+                    <div class="col text-start">
+                        <strong>Print one from your computer</strong>
+                        <ul>
+                            <li>Go to <strong><a href="https://deltadentalins.com"
+                                        target="_blank">deltadentalins.com</a></strong></li>
+                            <li>Log in to your online account > Click on <strong>Print ID Card</strong> > Print</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="col">
+                        <img src="./images/mobile.jpg" alt="id card desktop" class="img-fluid"
+                            style="max-width: 300px" />
+                    </div>
+                    <div class="col text-start">
+                        <strong>Pull it up on your smartphone</strong>
+                        <ul>
+                            <li>Download the <strong>Delta Dental</strong> app (by the Delta Dental Plans Association)
+                                from the App Store or Google Play</li>
+                            <li>Log in > Select <strong>My ID card</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mb-5">
+        <div class="row">
+            <h2 class="mb-4 fs-1 text-center">BrushSmart to Transform Your Oral Health</h2>
+            <p class="text-center lead">Sign up today for a 25% discount on Philips Sonicare products.<br><br>BrushSmart
+                is a new oral wellness program, exclusively for Delta Dental enrollees, that offers personalized
+                solutions, oral care tips and discounts on the products that help you improve your dental care routine.
+            </p>
+            <div class="col-md-6">
+                <img src="./images/3583-banner@2x.jpeg" alt="BrushSmart" class="img-fluid" />
+            </div>
+            <div class="col-md-6">
+                <p>Regular brushing and flossing — with the right tools — have always been the best way to strengthen
+                    your smile and protect your oral health. We’ve partnered with Philips Sonicare to bring you deals
+                    and products tailored to your specific needs and lifestyle.<br><br>Want to get started? It’s easy:
+                <ol>
+                    <li>Go to <a href="https://brushsmart.org/" target="_blank">brushsmart.org</a>.</li>
+                    <li>Fill out the sign-up section.</li>
+                    <li>Check the user agreement box, then click the Join BrushSmart button.</li>
+                    <li>That’s it! You’ll receive your coupon code and a confirmation email.</li>
+                </ol> Keeping a solid oral hygiene routine helps prevent all sorts of costly dental problems down the
+                road, and it decreases your risk of tooth decay and gum disease. Make sure you have the tools you need
+                for the best home dental care. <br><br>Visit <a href="https://brushsmart.org/"
+                    target="_blank">brushsmart.org</a> to see what BrushSmart can do for you.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col-md-6 align-self-center">
+                <h2 class="fs-1 text-center">Why Get Dental Coverage?</h2>
+                <p class="lead fs-3 text-center">Thinking of signing up for dental benefits? Here’s why you should say
+                    yes to dental.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="./images/diet-and-braces.jpg" alt="Why get dental coverage"
+                    class="img-fluid rounded-circle border-5 border" style="max-width: 300px" />
+            </div>
+            <div class="col-md-1 d-flex flex-column">
+                <a class="btn btn-primary flex-grow-1 bg-primary fs-3 m-auto desktop-vertical"
+                    href="https://deltadentalins.com">FIND OUT MORE</a>
+            </div>
+            <div class="col-md-11">
+                <h3 class="text-primary">Take care of your teeth:</h3>
+                <ul>
+                    <li><strong>You’re more likely to visit the dentist if you have dental insurance.</strong> Only half
+                        of people without dental coverage visit the dentist at least once a year. With coverage, that
+                        number jumps to almost 80%. <small><em>Delta Dental Oral Health and Well-Being Survey,
+                                2014</em></small></li>
+                    <li><strong>Stop decay before it starts.</strong> When you visit the dentist for regular cleanings
+                        and exams (covered at low or no cost under any dental plan), you’ll cut your risk of cavities
+                        and help identify problems before they get painful and expensive.</li>
+                    <li><strong>Prevent serious oral health risks.</strong> Your dentist can also catch major problems
+                        like gum disease and oral cancer.</li>
+                </ul>
+                <h3 class="text-primary">Stay healthy:</h3>
+                <ul>
+                    <li><strong>Protect your teeth, protect your body.</strong> Keeping your gums healthy can lessen the
+                        impact of systemic illness, such as diabetes, heart disease, and rheumatic arthritis.</li>
+                    <li><strong>Identify disease early.</strong> The mouth is a mirror, reflecting information about
+                        your whole body. Your dentist can identify signs of dozens of medical conditions with oral
+                        symptoms, from osteoporosis to acid reflux.</li>
+                </ul>
+                <h3 class="text-primary">Save money:</h3>
+                <ul>
+                    <li><strong>Invest in preventive care.</strong> Left untreated, a small cavity can balloon into a
+                        pricy problem, requiring a crown, root canal, or dental implant. Dental coverage makes it easy
+                        to get the exams and cleanings you need to save you money down the road.</li>
+                    <li><strong>Pay less for dental needs.</strong> From basic to major procedures, insurance lets you
+                        pay a fraction of the cost you’d have to pay if you weren’t covered.</li>
+                    <li><strong>Don’t miss out.</strong> Did you know that employed adults lose more than 164 million
+                        hours of work each year due to <a
+                            href="https://www.cdc.gov/oralhealth/publications/factsheets/adult_oral_health/adults.htm">oral
+                            health problems?</a> When you treat dental issues in time, you avoid racking up hours in
+                        unpaid leave.</li>
+                </ul>
+                <h3 class="text-primary">Feel better:</h3>
+                <ul>
+                    <li><strong>Get peace of mind.</strong> When you have dental insurance, you’re prepared for the
+                        unexpected.</li>
+                    <li><strong>Look better.</strong> Maintaining your dental health can improve your overall appearance
+                        and boost your confidence.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col-md-4 text-center mb-2">
+                <img src="./images/go-pro.jpg" alt="go pro dental" class="img-fluid rounded-circle border-5 border"
+                    style="max-width: 300px" />
+            </div>
+            <div class="col-md-8 align-self-center">
+                <h2 class="fs-1 text-center">WHY CHOOSE A PPO DENTAL PLAN</h2>
+                <p class="lead fs-3 text-center">Go PPO! 6 great reasons to stay in-network</p>
+                <p class="lead fs-5 text-center">Your Delta Dental PPO™ plan lets you visit any licensed dentist, but
+                    you’ll maximize plan value by taking advantage of our robust, nationwide PPO network.1 Here are six
+                    great reasons to “go PPO”:</p>
+            </div>
+            <div class="col-md-11">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="d-flex align-items-center">
+                            <span class="text-primary display-1 me-3 opacity-75">1</span>
+                            <span><strong class="text-primary">Greater savings.</strong> PPO dentists have agreed to
+                                reduced fees, which leaves more money in your pocket. You can find a PPO dentist at <a
+                                    href="#" target="_blank">deltadentalins.com</a>.</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="d-flex align-items-center">
+                            <span class="text-primary display-1 me-3 opacity-75">2</span>
+                            <span><strong class="text-primary">Quality assurance.</strong> Make sure your smile gets the
+                                care it deserves. We monitor PPO dentists to ensure proper licensing, cleanliness, and
+                                safety procedures.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="d-flex align-items-center">
+                            <span class="text-primary display-1 me-3 opacity-75">3</span>
+                            <span><strong class="text-primary">No balance billing.</strong> PPO dentists can't charge
+                                you more than their set fees. Out-of-network dentists may bill the difference between
+                                their usual fee and Delta Dental's contracted rate — a process known as "balance
+                                billing."</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="d-flex align-items-center">
+                            <span class="text-primary display-1 me-3 opacity-75">4</span>
+                            <span><strong class="text-primary">Avoid unbundling.</strong> PPO dentists agree not to
+                                "unbundle" services that are part of a treatment, like tooth preparation or local
+                                anesthesia. Out-of-network dentists may charge for these services separately, making
+                                overall costs higher.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="d-flex align-items-center">
+                            <span class="text-primary display-1 me-3 opacity-75">5</span>
+                            <span><strong class="text-primary">Less paperwork.</strong> PPO dentists handle all claim
+                                forms and other paperwork for you. If you choose an out-of-network dentist, you may need
+                                to submit a claim yourself.</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="d-flex align-items-center">
+                            <span class="text-primary display-1 me-3 opacity-75">6</span>
+                            <span><strong class="text-primary">No prepayment required.</strong> When you choose a PPO
+                                dentist, you'll pay only your portion of the bill. We'll pay our share directly to your
+                                dentist. Out-of-network dentists may require you to pay the full cost of treatment
+                                upfront and request reimbursement from Delta Dental.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 d-flex flex-column">
+                <a class="btn btn-primary flex-grow-1 bg-primary fs-3 m-auto desktop-vertical"
+                    href="https://deltadentalins.com/enrollees">GO PPO</a>
+            </div>
+        </div>
+    </section>
+    <style>
+        .hero-section {
+            background-image: url('./images/dental.jpg');
+            background-size: cover;
+            height: 600px;
+            position: relative;
+        }
+
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            border: 10px solid #f0f0f0;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle.primary {
+            background-color: #f9ca24;
+        }
+
+        .circle.secondary {
+            background-color: #3498db;
+        }
+
+        .circle.yellow {
+            background-color: #f9ca24;
+        }
+    </style>
+    <!-- end of hero section -->
+    <!-- footer -->
+    <div class="d-flex flex-column">
+        <footer class="bg-secondary text-white mt-auto">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About Company</h5>
+                        <img src="./images/TCSIG-Logo.jpeg" alt="Company Logo" class="img-fluid mb-3" width="250">
+                        <p>Our Mission is to pool risk and purchasing power of public entities to provide quality
+                            programs to our participants in an effective manner while emphasizing customer satisfaction,
+                            stability, financial solvency and cost.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Form</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phone" name="phone"
+                                    placeholder="Enter your phone number">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-select" id="subject" name="subject" required>
+                                    <option value="">Choose a subject</option>
+                                    <option value="employee-benefits">Employee Benefits</option>
+                                    <option value="wellness-center">Wellness Center</option>
+                                    <option value="workers-comp">Worker's Comp</option>
+                                    <option value="property-casualty">Property / Casualty</option>
+                                    <option value="governance">Governance</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5"
+                                    placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 bg-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Locations</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>TCSIG Admin Office</strong></li>
+                            <li>530-822-5299</li>
+                            <li>400 Plumas Blvd., Suite 210</li>
+                            <li>Yuba City, CA 95991</li>
+                            <li class="mt-3"><strong>TCSIG Wellness Center</strong></li>
+                            <li>530-822-5500</li>
+                            <li>1174 Live Oak Blvd.</li>
+                            <li>Yuba City, CA 95991</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <p class="text-center">&copy; Tri-County Schools Insurance Group</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
