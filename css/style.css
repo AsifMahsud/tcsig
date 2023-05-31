@@ -11,6 +11,12 @@
     --bs-link-color: rgb(var(--bs-secondary-rgb));
 }
 
+.nav-tabs {
+    --bs-nav-tabs-link-active-bg: rgb(var(--bs-secondary-rgb));
+    --bs-nav-tabs-link-active-color: #FFF;
+    --bs-nav-link-font-weight: 600;
+}
+
 .nav-link.active {
     background-color: rgb(var(--bs-primary-rgb));
 }
@@ -54,9 +60,22 @@
 }
 
 @media (min-width:992px) {
+    .m-top-n-3 {
+        margin-top: -3.5rem;
+    }
+
     .desktop-vertical {
         writing-mode: vertical-rl;
         text-orientation: upright;
+    }
+
+    .tab-table {
+        max-width: 992px;
+        margin: auto;
+    }
+
+    .tab-table tr>th {
+        min-width: 300px;
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
@@ -175,4 +194,8 @@ header {
 
 .secondary-nav button {
     --bs-border-width: 0;
+}
+
+.btn.small {
+    font-size: .875em;
 }
