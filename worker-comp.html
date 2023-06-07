@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Certificate of Insurance | TCSIG</title>
+  <title>Worker’s Comp | TCSIG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="description" content />
   <meta name="keywords" content />
@@ -17,19 +17,62 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="./js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    function setHeroMinHeight() {
-      var headerHeight = document.querySelector('header').offsetHeight;
-      document.querySelector('.hero-section').style.paddingTop = headerHeight + 80 + 'px';
+  <style>
+    .hero-section {
+      background-image: url("./images/workers-comp.jpg");
+      background-size: cover;
+      height: 500px;
+      position: relative;
     }
 
-    window.addEventListener('DOMContentLoaded', setHeroMinHeight);
-    window.addEventListener('resize', setHeroMinHeight);
-  </script>
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: #fff;
+    }
+
+    .hero-content h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .about-worker-ul>li:before {
+      font-family: 'FontAwesome';
+      content: "\f00c";
+      margin: 0 10px 0 0;
+      color: rgb(var(--bs-secondary-rgb));
+    }
+
+    @media only screen and (max-width: 820px) {
+      .hero-section {
+        height: 650px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <header class="container position-absolute top-0 start-0 end-0">
+  <header class="container">
     <!-- header container -->
     <div class="bg-secondary mx-2 d-lg-flex">
       <!-- logo -->
@@ -180,38 +223,119 @@
       </div>
     </div>
   </header>
-  <section class="hero-section position-relative" style="background-image: url(./images/insurance.jpg);">
+  <section class="hero-section mb-5">
     <div class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0">
-    </div>
-    <div class="container d-flex flex-column justify-content-end position-relative">
-      <h1 class="text-white">Certificate of Insurance</h1>
-    </div>
+      <div class="container h-100">
+        <div class="hero-content">
+          <h1 class="text-center"><span class="fs-3 text-light">Welcome to the TCSIG Workers’ Compensation Program!</h1>
+          <div class="hero-buttons flex-column flex-lg-row">
+            <a href="#company-nurse-info" class="btn btn-primary bg-primary">COMPANY NURSE INFO.</a>
+            <a href="./member-area.html" data-bs-toggle="modal" data-bs-target="#fullscreenModal"
+              class="btn btn-primary bg-primary">MEMBERS AREA</a>
+          </div>
+        </div>
+      </div>
   </section>
-  <section class="hero-breadcrumb border-bottom mb-4 py-2">
-    <div class="container">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb bg-transparent mb-0">
-          <li class="breadcrumb-item"><a href="./worker-comp.html">Worker's Comp</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Certificate of Insurance</li>
-        </ol>
-      </nav>
+  <section class="container mb-5" id="company-nurse-info">
+    <div class="row">
+      <p class="lead text-center">A safe working environment is our number one priority. However, should you become
+        injured or ill as a result of your job or your work as a volunteer, we want you to receive quality medical
+        treatment.</p>
+      <div class="col-md-6">
+        <ul>
+          <li>If an employee is in need of immediate/urgent medical treatment, call 911 and immediately contact Human
+            Resources.</li>
+          <li>Injured Employees should call Company Nurse and Company Nurse will assess the injury over the phone and
+            refer the injured employee to the most appropriate level of care. <ul>
+              <li>Company Nurse is available 24/7/365 1 (877) 518-6709</li>
+            </ul>
+          </li>
+        </ul>
+        <p>If the employee is referred for medical treatment by Company Nurse, the employee can visit one of our clinics
+          designated in our medical provider network.</p>
+        <p>In addition to Public SchoolWorks training for your employees, you have access to Safety National Safety
+          Source training resources. To access this resource please contact your district to get your username and
+          password.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="./images/nurse-info.jpeg" class="img-fluid" />
+      </div>
     </div>
   </section>
   <section class="container mb-5">
     <div class="row">
-      <div class="col-md-6 mx-auto fs-5">
-        <p> Certificates of Evidence of Coverage for Workers’ Compensation—can be issued on as needed basis on an Acord
-          25 and can be requested by emailing Eileen Massa <a
-            href="mailto: eileen.massa@theabdteam.com">eileen.massa@theabdteam.com</a> . When emailing your request,
-          please include the following: </p>
-        <ul>
-          <li class="mb-2">Certificate Holder Information</li>
-          <li class="mb-2">Name</li>
-          <li class="mb-2">Address</li>
-          <li class="mb-2"> Contact for certificate delivery such as an email, fax, or mail. </li>
-          <li class="mb-2"> Please indicate the need for the certificate and advise on event specific information for the certificate
-            description or proof of coverage wording. </li>
+      <div class="col-md-6">
+        <h2 class="mb-2">About TCSIG Workers' Comp</h2>
+        <ul class="about-worker-ul list-unstyled">
+          <li class="mb-2">Ownership, Control</li>
+          <li class="mb-2">Equity Build-Up, Dividend Potential, Non-Profit</li>
+          <li class="mb-2">Full Transparency, No Unfunded Contingent Liability</li>
+          <li class="mb-2">Services</li>
+          <li class="mb-2"> Risk Management Resource Portal <ul>
+              <li> Staff Safety, Training, and Compliance Management <ul>
+                  <li>Single Set Up, Automatic Execution</li>
+                </ul>
+              </li>
+            </ul>
+          </li class="mb-2">
+          <li class="mb-2">Accident Reporting and Post Accident Safety Management</li>
+          <li class="mb-2">Designated consultant to track and help manage program</li>
+          <li class="mb-2">Claims and Loss</li>
         </ul>
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-2">Certificate of Insurance</h2>
+        <p>Certificates of Evidence of Coverage for Workers’ Compensation—can be issued on as needed basis on an Acord
+          25 and can be requested by emailing Eileen Massa <a
+            href="mailto:eileen.massa@theabdteam.com">eileen.massa@theabdteam.com</a>. When emailing your request,
+          please include the following:</p>
+        <ul>
+          <li class="mb-1">Certificate Holder Information</li>
+          <li class="mb-1">Name</li>
+          <li class="mb-1">Address</li>
+          <li class="mb-1">Contact for certificate delivery such as an email, fax, or mail.</li>
+          <li class="mb-1">Please indicate the need for the certificate and advise on event specific information for the
+            certificate description or proof of coverage wording.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="container mb-5">
+    <div class="row text-center">
+      <h2 class="fs-1">Company Nurse</h2>
+      <p class="lead">The first line of defense against work’s little (and not so little) mishaps. Protect your
+        employees, protect your school. In addition to triaging workplace injuries at the moment they occur, Company
+        Nurse also gets your workers’ comp claims off to your ideal start.</p>
+      <div class="col-md-6 mx-auto">
+        <img src="./images/workplace-injury.webp" class="img-fluid" alt="" />
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-7 mx-auto"><img src="./images/process-flow_for-clients.webp" class="img-fluid" alt="" /></div>
+    </div>
+    <hr>
+  </section>
+  <section class="container mb-5">
+    <div class="row">
+      <h2 class="text-center mb-3">Public School Works</h2>
+      <div class="col-md-6 my-auto">
+        <p class="mb-4 lead text-center"> As a member of the TCSIG workers’ compensation program, members will receive
+          services from PublicSchoolWORKS (PSW) which are being funded by TCSIG. PSW is a comprehensive online workplace
+          safety program that includes programs and services that have been developed to improve the safety of schools
+          and focuses on prevention initiatives to reduce risk but also post incident initiatives to mitigate risk
+          issues when an employee injury occurs. </p>
+        <a href="https://www.publicschoolworks.com/Portal/Portal.php?di=1534&dia=e2u38" target="_blank"
+          class="btn bg-primary text-white w-100">Enter</a>
+      </div>
+      <div class="col-md-6 text-center mb-3">
+        <div class="video-container">
+          <video controls poster="./images/public-school-work.avif" class="embed-responsive-item"
+            style="width: 100%; height: 100%">
+            <source src="vidoes/eap-summary.mp4" type="video/mp4" />
+          </video>
+          <p class="small">TCSIG offers comprehensive staff and student safety solutions that keep schools compliant through its partnership with Public School Works.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -278,6 +402,27 @@
         </div>
       </div>
     </footer>
+  </div>
+  <!-- members area model -->
+  <div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body container">
+          <button type="button" class="btn-close end-0 position-absolute fs-4" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+          <div class="d-flex flex-column justify-content-center align-items-center h-100">
+            <h1>Member Area</h1>
+            <p>Please enter the password below.</p>
+            <form>
+              <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Password" name="password" required>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 bg-primary">Go</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
