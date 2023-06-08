@@ -26,10 +26,19 @@
       referrerpolicy="no-referrer"
     />
     <script src="./js/index.js"></script>
+    <script>
+      function setHeroMinHeight() {
+        var headerHeight = document.querySelector('header').offsetHeight;
+        document.querySelector('.hero-section').style.paddingTop = headerHeight + 80 + 'px';
+      }
+  
+      window.addEventListener('DOMContentLoaded', setHeroMinHeight);
+      window.addEventListener('resize', setHeroMinHeight);
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <header class="container mb-5">
+    <header class="container position-absolute top-0 start-0 end-0">
       <!-- header container -->
       <div class="bg-secondary mx-2 d-lg-flex">
         <!-- logo -->
@@ -138,7 +147,7 @@
                     <li class="nav-item dropdown" id="wellness-center-dropdown">
                       <a
                         class="nav-link dropdown-toggle"
-                        href="./wellness-center.html"
+                        href="./worker-comp.html"
                         >Worker's Comp</a
                       >
                       <ul class="dropdown-menu">
@@ -291,11 +300,29 @@
       </div>
     </header>
 
+    <section class="hero-section position-relative" style="background-image: url(./images/anthen-app.jpg);">
+      <div class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0">
+      </div>
+      <div class="container d-flex flex-column justify-content-end position-relative">
+        <h1 class="text-white">Athens Administrators</h1>
+      </div>
+    </section>
+    <section class="hero-breadcrumb border-bottom mb-4 py-2">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0">
+            <li class="breadcrumb-item"><a href="./worker-comp.html">Worker's Comp</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Athens Administrators</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
     <section class="container mb-5">
       <div class="row">
-        <div class="col-sm-8 mx-auto">
-          <h2 class="text-secondary text-center mb-3">Athens Administrators</h2>
-          <p>
+        <div class="col-sm-9 mx-auto">
+          <h2 class="text-center mb-3">Athens Administrators</h2>
+          <p class="lead">
             The recognized leader in third party-claims administration services.
             To access the portal, please go to
             <br />
@@ -303,15 +330,15 @@
               >https://portal.athensadmin.com/login.php</a
             >
           </p>
-          <h5 class="text-secondary">Time of Hire Pamphlets</h5>
+          <h5>Time of Hire Pamphlets</h5>
           <ul class="mb-4">
-            <li>
+            <li class="mb-1">
               <strong
                 >The Facts About Workers – TCSIG, Informacion de Compensacion
                 del Trabajador – TCSIG: .</strong
               >
             </li>
-            <li>
+            <li class="mb-1">
               <strong
                 >TCSIG MPN Info Sheet, Informacion de TCSIG MPN – SPANISH: </strong
               >This form discusses the Medical Provider Network, treatment
@@ -325,9 +352,9 @@
             </li>
           </ul>
 
-          <h5 class="text-secondary">Posting Notices</h5>
+          <h5>Posting Notices</h5>
           <ul class="mb-4">
-            <li>
+            <li class="mb-1">
               <strong>TCSIG DWC 7 </strong>(Both English and Spanish)
               <ul>
                 <li>
@@ -337,23 +364,23 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="mb-1">
               <strong>Company Nurse Poster – </strong>Please note that each
               District has its own poster.
             </li>
           </ul>
 
-          <h5 class="text-secondary">Time of Injury</h5>
+          <h5>Time of Injury</h5>
           <ul class="mb-4">
-            <li>
+            <li class="mb-1">
               <strong>DWC-1 Claim Form</strong>
             </li>
-            <li>
+            <li class="mb-1">
               <strong
                 >TCSIG MPN Info Sheet, Informacion de TCSIG MPN – SPANISH: </strong
               >Same as above
             </li>
-            <li>
+            <li class="mb-1">
               <strong>Pharmacy First Fill - </strong>Provide to the injured
               worker within 24 hours of notice.
             </li>
@@ -364,11 +391,8 @@
 
     <section class="container mb-5">
       <div class="row mb-5">
-        <div class="col-sm-12 mx-auto bg-secondary p-3 rounded text-white mb-3">
-          <h1 class="text-center">DOWNLOAD</h1>
-        </div>
         <div class="col-sm-8 mx-auto">
-          <h2 class="text-secondary fs-1 text-center mb-3">The Athens App</h2>
+          <h2 class="fs-1 text-center mb-3">The Athens App</h2>
           <h4 class="text-primary fs-5 text-center mb-3">
             FOR INJURED WORKERS
           </h4>

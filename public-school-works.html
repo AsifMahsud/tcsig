@@ -16,11 +16,20 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="./js/index.js"></script>
+  <script>
+    function setHeroMinHeight() {
+      var headerHeight = document.querySelector('header').offsetHeight;
+      document.querySelector('.hero-section').style.paddingTop = headerHeight + 80 + 'px';
+    }
+
+    window.addEventListener('DOMContentLoaded', setHeroMinHeight);
+    window.addEventListener('resize', setHeroMinHeight);
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-  <header class="container mb-5">
+  <header class="container position-absolute top-0 start-0 end-0">
     <!-- header container -->
     <div class="bg-secondary mx-2 d-lg-flex">
       <!-- logo -->
@@ -77,28 +86,58 @@
                     <a class="nav-link" href="#">Wellness Center</a>
                   </li>
                   <li class="nav-item dropdown" id="wellness-center-dropdown">
-                    <a class="nav-link dropdown-toggle" href="./wellness-center.html">Worker's Comp</a>
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="./worker-comp.html"
+                      >Worker's Comp</a
+                    >
                     <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item" href="./about-workers-comp.html">About TCSIG Workers Comp</a>
+                        <a
+                          class="dropdown-item"
+                          href="./about-workers-comp.html"
+                          >About TCSIG Workers Comp</a
+                        >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="./certificate-of-insurance.html">Certificate of Insurance</a>
+                        <a
+                          class="dropdown-item"
+                          href="./certificate-of-insurance.html"
+                          >Certificate of Insurance</a
+                        >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="./company-nurse.html">Company Nurse</a>
+                        <a class="dropdown-item" href="./company-nurse.html"
+                          >Company Nurse</a
+                        >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="./risk-management-committee.html">Risk Management</a>
+                        <a
+                          class="dropdown-item"
+                          href="./risk-management-committee.html"
+                          >Risk Management</a
+                        >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="./public-school-works.html">Public School Works</a>
+                        <a
+                          class="dropdown-item"
+                          href="./public-school-works.html"
+                          >Public School Works</a
+                        >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="./covid-19-training.html">Covid-19 Training</a>
+                        <a
+                          class="dropdown-item"
+                          href="./covid-19-training.html"
+                          >Covid-19 Training</a
+                        >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="./athens-administrators.html">Athens Administrators </a>
+                        <a
+                          class="dropdown-item"
+                          href="./athens-administrators.html"
+                          >Athens Administrators
+                        </a>
                       </li>
                     </ul>
                   </li>
@@ -167,10 +206,29 @@
       </div>
     </div>
   </header>
+
+  <section class="hero-section position-relative" style="background-image: url(./images/public-school-work.jpg);">
+    <div class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0">
+    </div>
+    <div class="container d-flex flex-column justify-content-end position-relative">
+      <h1 class="text-white">Public School Work</h1>
+    </div>
+  </section>
+  <section class="hero-breadcrumb border-bottom mb-4 py-2">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent mb-0">
+          <li class="breadcrumb-item"><a href="./worker-comp.html">Worker's Comp</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Public School Work</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
   <section class="container mb-5">
-    <div class="row mb-5">
+    <div class="row mb-3">
       <div class="col-sm-8 mx-auto fw-light">
-        <h2 class="text-secondary text-center mb-3">Public School Works</h2>
+        <h2 class="text-center mb-3">Public School Works</h2>
         <p class="mb-4"> As a member of the TCSIG workers’ compensation program, members will receive services from
           PublicSchoolWORKS (PSW) which are being funded by TCSIG. PSW is a comprehensive online workplace safety
           program that includes programs and services that have been developed to improve the safety of schools and
@@ -183,26 +241,24 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-8 mx-auto text-center mb-3">
-        <div class="d-flex justify-content-center">
-          <div class="video-container" style="max-width: 513.59px; max-height: 288.89px">
-            <video controls poster="./images/public-school-work.avif" class="embed-responsive-item"
-              style="width: 100%; height: 100%">
-              <source src="vidoes/eap-summary.mp4" type="video/mp4" />
-              <!-- Provide alternative video formats for cross-browser support -->
-            </video>
-          </div>
+      <div class="col-md-6 text-center mx-auto">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://player.vimeo.com/video/662368758?title=0&amp;app_id=122963" frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" title="21021 PSW Brand Story v5"
+            data-ready="true" class="w-100 h-100"></iframe>
         </div>
+        <p class="small">TCSIG offers comprehensive staff and student safety solutions that keep schools compliant
+          through its partnership with Public School Works.</p>
       </div>
     </div>
   </section>
   <section class="container mb-5">
     <div class="row mb-5">
       <div class="col-sm-8 mx-auto fw-light">
-        <h2 class="text-secondary text-center mb-3">Safety National</h2>
-        <h5 class="text-decoration-underline mb-3"> Safety National- MAP Client Services </h5>
+        <h2 class="text-center mb-3">Safety National</h2>
+        <h5 class="text-decoration-underline mb-3 lead"> Safety National- MAP Client Services </h5>
         <h5>Safety National De-escalation Resources</h5>
-        <p class="mb-2"> Safety National has two de-escalation vendors they have partnered with: Crisis Prevention
+        <p class="mb-1"> Safety National has two de-escalation vendors they have partnered with: Crisis Prevention
           Institute (CPI) and ProAct. They both focus on de-escalation but have different philosophies of the approach
           and audience. Discount pricing is available. </p>
         <br />

@@ -3,30 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <title>Company Nurse | TCSIG</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=yes"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <meta name="description" content />
     <meta name="keywords" content />
     <link rel="icon" sizes="192x192" href="./images/site-icon.png" />
     <meta http-equiv="content-language" content="en-us" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function setHeroMinHeight() {
+        var headerHeight = document.querySelector('header').offsetHeight;
+        document.querySelector('.hero-section').style.paddingTop = headerHeight + 80 + 'px';
+      }
+  
+      window.addEventListener('DOMContentLoaded', setHeroMinHeight);
+      window.addEventListener('resize', setHeroMinHeight);
+    </script>
     <style>
       .custom-iframe {
         width: 90%;
@@ -40,7 +38,7 @@
     </style>
   </head>
   <body>
-    <header class="container mb-5">
+    <header class="container position-absolute top-0 start-0 end-0">
       <!-- header container -->
       <div class="bg-secondary mx-2 d-lg-flex">
         <!-- logo -->
@@ -149,7 +147,7 @@
                     <li class="nav-item dropdown" id="wellness-center-dropdown">
                       <a
                         class="nav-link dropdown-toggle"
-                        href="./wellness-center.html"
+                        href="./worker-comp.html"
                         >Worker's Comp</a
                       >
                       <ul class="dropdown-menu">
@@ -302,11 +300,29 @@
       </div>
     </header>
 
+    <section class="hero-section position-relative" style="background-image: url(./images/company-nurse.jpg);">
+      <div class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0">
+      </div>
+      <div class="container d-flex flex-column justify-content-end position-relative">
+        <h1 class="text-white">Company Nurse</h1>
+      </div>
+    </section>
+    <section class="hero-breadcrumb border-bottom mb-4 py-2">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0">
+            <li class="breadcrumb-item"><a href="./worker-comp.html">Worker's Comp</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Company Nurse</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
     <section class="container mb-5">
       <div class="row">
         <div class="col-sm-8 mx-auto fw-light">
-          <h2 class="text-secondary text-center mb-3">Company Nurse</h2>
-          <p>
+          <h2 class="text-center mb-3">Company Nurse</h2>
+          <p class="lead">
             The first line of defense against work’s little (and not so little)
             mishaps. Protect your employees, protect your school. In addition to
             triaging workplace injuries at the moment they occur, Company Nurse
@@ -373,8 +389,8 @@
 
         <section class="container pt-5 mb-2">
           <div class="row">
-            <div class="col-8 mx-auto">
-              <h2 class="text-center pb-5 text-secondary fw-bold">
+            <div class="col-10 mx-auto">
+              <h2 class="text-center pb-5 fw-bold">
                 Frequently asked questions
               </h2>
 
@@ -387,8 +403,14 @@
                     aria-expanded="false"
                     aria-controls="faq1"
                   >
-                    <i class="far fa-paper-plane pe-2"></i>
-                    Should every workplace injury be reported to Company Nurse?
+                    <div class="d-flex">
+                      <i class="far fa-paper-plane pe-2"></i>
+                      <span>
+                        Should every workplace injury be reported to Company
+                        Nurse?</span
+                      >
+                      <i class="fas fa-angle-down ms-auto"></i>
+                    </div>
                   </h5>
                   <div class="collapse" id="faq1">
                     <p class="fw-light">
@@ -410,9 +432,15 @@
                     aria-expanded="false"
                     aria-controls="faq2"
                   >
-                    <i class="fas fa-pen-alt pe-2"></i>How should
-                    an obvious emergency situation be handled?
+                    <div class="d-flex">
+                      <i class="fas fa-pen-alt pe-2"></i
+                      ><span>
+                        How should an obvious emergency situation be handled?
+                      </span>
+                      <i class="fas fa-angle-down ms-auto"></i>
+                    </div>
                   </h5>
+
                   <div class="collapse" id="faq2">
                     <p>
                       In all life- or limb-threatening situations, call 911 or
@@ -431,8 +459,14 @@
                     aria-expanded="false"
                     aria-controls="faq3"
                   >
-                    <i class="fas fa-user pe-2"></i> Does Company
-                    Nurse diagnose an injury over the telephone?
+                    <div class="d-flex">
+                      <i class="fas fa-user pe-2"></i>
+                      <span>
+                        Does Company Nurse diagnose an injury over the
+                        telephone?
+                      </span>
+                      <i class="fas fa-angle-down ms-auto"></i>
+                    </div>
                   </h5>
                   <div class="collapse" id="faq3">
                     <p>
@@ -452,10 +486,15 @@
                     aria-expanded="false"
                     aria-controls="faq4"
                   >
-                    <i class="fas fa-rocket pe-2"></i> The employee
-                    was referred for treatment. The employee and the supervisor
-                    do not think this injury needs to be treated. Should
-                    treatment be sought anyway?
+                    <div class="d-flex">
+                      <i class="fas fa-rocket pe-2"></i
+                      ><span>
+                        The employee was referred for treatment. The employee
+                        and the supervisor do not think this injury needs to be
+                        treated. Should treatment be sought anyway?
+                      </span>
+                      <i class="fas fa-angle-down ms-auto"></i>
+                    </div>
                   </h5>
                   <div class="collapse" id="faq4">
                     <p>
@@ -479,9 +518,14 @@
                     aria-expanded="false"
                     aria-controls="faq5"
                   >
-                    <i class="fas fa-home pe-2"></i> The employee
-                    does not want to call Company Nurse. Should the supervisor
-                    call?
+                    <div class="d-flex">
+                      <i class="fas fa-home pe-2"></i
+                      ><span>
+                        The employee does not want to call Company Nurse. Should
+                        the supervisor call?
+                      </span>
+                      <i class="fas fa-angle-down ms-auto"></i>
+                    </div>
                   </h5>
                   <div class="collapse" id="faq5">
                     <p>
@@ -502,8 +546,13 @@
                     aria-expanded="false"
                     aria-controls="faq6"
                   >
-                    <i class="fas fa-book-open pe-2"></i> Will
-                    Company Nurse provide general health care advice?
+                    <div class="d-flex">
+                      <i class="fas fa-book-open pe-2"></i
+                      ><span>
+                        Will Company Nurse provide general health care advice?
+                      </span>
+                      <i class="fas fa-angle-down ms-auto"></i>
+                    </div>
                   </h5>
                   <div class="collapse" id="faq6">
                     <p>
@@ -521,9 +570,14 @@
                     aria-expanded="false"
                     aria-controls="faq7"
                   >
-                    <i class="fas fa-home pe-2"></i> Will the
-                    employee be given some type of reference or call
-                    confirmation number?
+                    <div class="d-flex">
+                      <i class="fas fa-home pe-2"></i
+                      ><span>
+                        Will the employee be given some type of reference or
+                        call confirmation number?</span
+                      >
+                      <i class="fas fa-angle-down ms-auto"></i>
+                    </div>
                   </h5>
                   <div class="collapse" id="faq7">
                     <p>
@@ -543,8 +597,11 @@
                     aria-expanded="false"
                     aria-controls="faq8"
                   >
-                    <i class="fas fa-paper-plane pe-2"></i> To whom
-                    does Company Nurse report injuries?
+                    <div class="d-flex">
+                      <i class="fas fa-paper-plane pe-2"></i>
+                      <span>To whom does Company Nurse report injuries? </span>
+                      <i class="fas fa-angle-down ms-auto"></i>
+                    </div>
                   </h5>
                   <div class="collapse" id="faq8">
                     <p>
@@ -564,9 +621,14 @@
                     aria-expanded="false"
                     aria-controls="faq9"
                   >
-                    <i class="fas fa-user pe-2"></i> What happens
-                    if the employee is on hold for an extended period of time
-                    waiting for a nurse?
+                    <div class="d-flex">
+                      <i class="fas fa-user pe-2"></i>
+                      <span>
+                        What happens if the employee is on hold for an extended
+                        period of time waiting for a nurse?
+                      </span>
+                      <i class="fas fa-angle-down ms-auto"></i>
+                    </div>
                   </h5>
                   <div class="collapse" id="faq9">
                     <p>
@@ -594,8 +656,13 @@
                     aria-expanded="false"
                     aria-controls="faq15"
                   >
-                    <i class="fas fa-book-open pe-2"></i> Is
-                    Company Nurse my Workers’ Comp Insurance?
+                    <div class="d-flex">
+                      <i class="fas fa-book-open pe-2"></i
+                      ><span>
+                        Is Company Nurse my Workers’ Comp Insurance?
+                      </span>
+                      <i class="fas fa-angle-down ms-auto"></i>
+                    </div>
                   </h5>
                   <div class="collapse" id="faq15">
                     <p>
