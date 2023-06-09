@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Benefit Summary | TCSIG</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="description" content />
+    <meta name="keywords" content />
+    <link rel="icon" sizes="192x192" href="./images/site-icon.png" />
+    <meta http-equiv="content-language" content="en-us" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/5.2.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script></script>
+
+    <script>
+      function setHeroMinHeight() {
+        var headerHeight = document.querySelector("header").offsetHeight;
+        document.querySelector(".hero-section").style.paddingTop =
+          headerHeight + 80 + "px";
+      }
+
+      window.addEventListener("DOMContentLoaded", setHeroMinHeight);
+      window.addEventListener("resize", setHeroMinHeight);
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 5%; /* Change this to the desired color */
+      }
+
+      @media (max-width: 767px) {
+        .carousel-inner .carousel-item > div {
+          display: none;
+        }
+        .carousel-inner .carousel-item > div:first-child {
+          display: block;
+        }
+      }
+
+      .carousel-inner .carousel-item.active,
+      .carousel-inner .carousel-item-next,
+      .carousel-inner .carousel-item-prev {
+        display: flex;
+      }
+
+      @media (max-width: 767px) {
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+          display: list-item;
+        }
+      }
+      /* medium and up screens */
+      @media (min-width: 768px) {
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+          transform: translateX(25%);
+        }
+
+        .carousel-inner .carousel-item-start.active,
+        .carousel-inner .carousel-item-prev {
+          transform: translateX(-25%);
+        }
+      }
+
+      .carousel-inner .carousel-item-end,
+      .carousel-inner .carousel-item-start {
+        transform: translateX(0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="container position-absolute top-0 start-0 end-0">
+      <!-- header container -->
+      <div class="bg-secondary mx-2 d-lg-flex">
+        <!-- logo -->
+        <div class="logo px-4 py-4 bg-primary">
+          <img
+            src="./images/TCSIG-Logo.jpeg"
+            class="img-fluid"
+            alt="tcsig site icon"
+          />
+        </div>
+        <div class="header-content w-100">
+          <div
+            class="mx-4 mx-lg-0 d-flex justify-content-between justify-content-lg-start align-items-baseline"
+          >
+            <!-- primary nav -->
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler px-4 py-3 bg-primary text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown2"
+                  aria-controls="navbarNavDropdown2"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  MENU <i class="fa-solid fa-bars ps-2"></i>
+                </button>
+                <div
+                  class="collapse navbar-collapse px-2"
+                  id="navbarNavDropdown2"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./about-us.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li
+                      class="nav-item dropdown"
+                      id="employee-benefits-dropdown"
+                    >
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./employee-benefits.html"
+                        >Employee Benefits</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="./medical.html"
+                            >Medical</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./dental.html"
+                            >Dental</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./vision.html"
+                            >Vision</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./prescription-rx.html"
+                            >Prescription RX</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./mental-health.html"
+                            >Mental Health / EAP</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="http://tcsigchiro.com"
+                            target="_blank"
+                            >Chiropractic Services</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./life.html">Life</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./telemedicine.html"
+                            >Telemedicine</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="wellness-center-dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./worker-comp.html"
+                        >Wellness Center</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./about-workers-comp.html"
+                            >Latest Updates</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./benefit-summary.html"
+                            >Benefits Summary</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            data-bs-toggle="modal"
+                            data-bs-target="#fullscreenModal"
+                            href="./member-area.html"
+                            >Members Area</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./company-nurse.html"
+                            >Company Nurse</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./risk-management-committee.html"
+                            >Risk Management</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./public-school-works.html"
+                            >Public School Works</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./covid-19-training.html"
+                            >Covid-19 Training</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./athens-administrators.html"
+                            >Athens Administrators
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="wellness-center-dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./worker-comp.html"
+                        >Worker's Comp</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./about-workers-comp.html"
+                            >About TCSIG Workers Comp</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./certificate-of-insurance.html"
+                            >Certificate of Insurance</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            data-bs-toggle="modal"
+                            data-bs-target="#fullscreenModal"
+                            href="./member-area.html"
+                            >Members Area</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./company-nurse.html"
+                            >Company Nurse</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./risk-management-committee.html"
+                            >Risk Management</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./public-school-works.html"
+                            >Public School Works</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./covid-19-training.html"
+                            >Covid-19 Training</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./athens-administrators.html"
+                            >Athens Administrators
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Property / Casualty</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- search icon -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#searchModal"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="searchModal"
+              tabindex="-1"
+              aria-labelledby="searchModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg position-fixed top-0 end-0"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="fa fa-times text-dark fs-1"></i>
+                  </button>
+                  <div class="modal-body">
+                    <form class="searchform" action="#">
+                      <input
+                        type="search"
+                        class="form-control"
+                        name="search"
+                        value
+                        id="search"
+                        placeholder="Type keyword(s) here and hit Enter …"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- secondary nav and chat icon -->
+          <div class="secondary-nav my-2 my-lg-0 mx-4">
+            <!-- secondary nav -->
+            <nav class="navbar navbar-expand-lg bg-secondary">
+              <button
+                class="navbar-toggler text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="position-relative w-100">
+                <div
+                  class="collapse navbar-collapse position-absolute w-100 bg-light p-4 p-lg-0 rounded"
+                  id="navbarNavDropdown"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Governance</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Documents</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- chat icon -->
+              <a href="#"
+                ><img
+                  src="./images/LynnSisnerosBitmoji.png"
+                  class="img-fluid chat-icon"
+                  alt="TCSIG personality. Lynn bitmoji"
+                  width="80"
+              /></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="hero-section position-relative"
+      style="background-image: url(./images/risk-management.jpg)"
+    >
+      <div
+        class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0"
+      ></div>
+      <div
+        class="container d-flex flex-column justify-content-end position-relative"
+      >
+        <h1 class="text-white">Benefits Summary</h1>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row">
+        <div class="col-md-12 mx-auto position-relative">
+          <div class="container my-3">
+            <div
+              class="row mx-auto my-auto justify-content-center rounded p-3"
+              style="background-color: #e1e2f9"
+            >
+              <div id="Biometric" class="carousel slide">
+                <div class="carousel-inner" role="listbox">
+                  <h3 class="lead mb-3 fs-2">Biometric Screening</h3>
+                  <div class="carousel-item active bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="card-img">
+                          <div class="ratio ratio-4x3">
+                            <iframe
+                              src="https://www.youtube.com/embed/LbuxeCvYEYg"
+                              title="YouTube video"
+                              class="col-lg-12 col-md-12 col-sm-12"
+                              loading="lazy"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small">
+                          How to Register For Your Biometric Screening
+                          Appointment
+                        </h6>
+                        <a
+                          class="small fw-light"
+                          href="https://healow.com/apps/practice/acorn-health-solutions-yuba-city-ca-18722?v=1"
+                        >
+                          https://healow.com/apps/practice/acorn-health-solutions-yuba-city-ca-18722?v=1
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/iIAGgJMVHB4"
+                            title="YouTube video"
+                            allowfullscreen
+                            loading="lazy"
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small">
+                          Fasting for Biometrics
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/kDhJFHvHPBo"
+                            title="YouTube video"
+                            allowfullscreen
+                            loading="lazy"
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small">
+                          Biometric Screening - Vitals
+                        </h6>
+                        <span class="small fw-light">
+                          Learn about the importance of your Biometric Vitals -
+                          Blood pressure, heart rate, height, weight, and waist
+                          circumference from your own TCSIG Wellness Center's
+                          Tatiana Hurtado, PA-C, MHS, MPH.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/_UumoL-Iw5Q"
+                            title="YouTube video"
+                            allowfullscreen
+                            loading="lazy"
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small">Biometric Vitals</h6>
+                        <span class="small fw-light">
+                          Learn about the importance of your biometric vitals
+                          with your own TCSIG Wellness Center's Tatiana Hurtado,
+                          PA-C, MHS, MPH</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev bg-transparent"
+            href="#Biometric"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon rounded-5 bg-secondary"
+              aria-hidden="true"
+            ></span>
+          </a>
+          <a
+            class="carousel-control-next bg-transparent w-aut"
+            href="#Biometric"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon rounded-5 bg-secondary"
+              aria-hidden="true"
+            ></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="container">
+      <div class="row">
+        <div class="col-md-12 mx-auto position-relative">
+          <div class="container my-3">
+            <div
+              class="row mx-auto my-auto justify-content-center rounded p-3"
+              style="background-color: #e1e2f9"
+            >
+              <div id="wellness-wednesday" class="carousel slide">
+                <div class="carousel-inner" role="listbox">
+                  <h3 class="lead mb-3 fs-2">Wellness Wednesday</h3>
+                  <div class="carousel-item active bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="card-img">
+                          <div class="ratio ratio-4x3">
+                            <iframe
+                              src="https://www.youtube.com/embed/nRRiGMCLP54"
+                              title="YouTube video"
+                              class="col-lg-12 col-md-12 col-sm-12"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">Mindfulness</h6>
+                        <p class="small fw-light px-1">
+                          Shea Smith, PA-C discusses mindfulness, box breathing,
+                          and PMR
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/yTru7dl-WcA"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Shea Smith, PA-C talks about chronic stress and some
+                          of it's physical symptoms.
+                        </h6>
+                        <p class="small fw-light px-1">
+                          Shea Smith, PA-C talks about chronic stress and some
+                          of it's physical symptoms.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/nydFbCPQK-c"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Women's Health Recap
+                        </h6>
+                        <p class="small fw-light px-1">
+                          Clinician's Jena McCall, PA-C and Tatiana Hurtado,
+                          PA-C discuss the important screenings for women.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/CPUhZN1Xfjs"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">Pap Smear</h6>
+                        <p class="small fw-light px-1">
+                          Shea Smith,PA-C explains why pap smears. are
+                          important.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="card-img">
+                          <div class="ratio ratio-4x3">
+                            <iframe
+                              src="https://www.youtube.com/embed/-2-92Kilt9M"
+                              title="YouTube video"
+                              class="col-lg-12 col-md-12 col-sm-12"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Urinary Incontinence
+                        </h6>
+                        <p class="small fw-light px-1">
+                          Jena McCall, PA-C explains a very common condition:
+                          urinary incontinence
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/-I9lWvqKSfM"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Mammogram Screening
+                        </h6>
+                        <p class="small fw-light px-1">
+                          Jena McCall, PA-C explains Mammograms and the proper
+                          screenings for breast cancer prevention and early
+                          detection.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/rVRQWrrX6bU"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Tobacco Health Screenings & Quitting
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/JHSY_RlutOA"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Prevention & Screening - Tobacco
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/2AH3oLibp_A"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Cancer Prevention - HPV Vaccine
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/29TyXMxHhnc"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Reducing Cancer Risk through Alcohol Reduction
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/74jfSmUieFA"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Skin Cancer Prevention with Shea Smith, PA-C
+                        </h6>
+                        <span class="small fw-light px-1">
+                          Information and Tips on best practices to help prevent
+                          skin cancer.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="card-img">
+                          <div class="ratio ratio-4x3">
+                            <iframe
+                              src="https://www.youtube.com/embed/-k_rADArxzE"
+                              title="YouTube video"
+                              class="col-lg-12 col-md-12 col-sm-12"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Cancer Prevention - Physical Activity
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/KbNsip7gfJ8"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Men's Health Month - Bladder Cancer Awareness
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/NIEAXdqzRQ0"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Wellness Wednesday - Mens Health Month June 2022:
+                          Prostate Health
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/JBiDQZJWykw"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Wellness Wednesday - Men's Health Month June 2022:
+                          Testicular Health
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="card-img">
+                          <div class="ratio ratio-4x3">
+                            <iframe
+                              src="https://www.youtube.com/embed/EjaEs7xxu8w"
+                              title="YouTube video"
+                              class="col-lg-12 col-md-12 col-sm-12"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Nutrition for a Healthy Blood Pressure May 2022
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/_5T4p7Dmcjo"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Importance of Colonoscopy and Cologuard Procedures
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/P_oPUaA0ZMI"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Colon Cancer Awareness March Month 2022
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/UtNflmngrFY"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Heart Health Month and Jumping Jacks Challenge
+                          February 2022
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="card-img">
+                          <div class="ratio ratio-4x3">
+                            <iframe
+                              src="https://www.youtube.com/embed/GOFbOaj4o-k"
+                              title="YouTube video"
+                              class="col-lg-12 col-md-12 col-sm-12"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Heart Health Reminders at TCSIG Wellness Center
+                          February 2022
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/GLOo2hSw_jM"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Nutrition to Build a Strong Immune System
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/5kNwt84GDZ8"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Pneumococcal Vaccine Month at TCSIG Wellness Center
+                          2021
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/MsxCI-M0RDA"
+                            title="YouTube video"
+                            allowfullscreen
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Flu Shot Month at TCSIG Wellness Center 2021
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="card-img">
+                          <div class="ratio ratio-4x3">
+                            <iframe
+                              src="https://www.youtube.com/embed/60SaX6IjDqs"
+                              title="YouTube video"
+                              class="col-lg-12 col-md-12 col-sm-12"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          What's the Scoop on Carbohydrates and Diabetes?
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev bg-transparent"
+            href="#wellness-wednesday"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon rounded-5 bg-secondary"
+              aria-hidden="true"
+            ></span>
+          </a>
+          <a
+            class="carousel-control-next bg-transparent w-aut"
+            href="#wellness-wednesday"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon rounded-5 bg-secondary"
+              aria-hidden="true"
+            ></span>
+          </a>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="container">
+      <div class="row">
+        <div class="col-md-12 mx-auto position-relative">
+          <div class="container my-3">
+            <div
+              class="row mx-auto my-auto justify-content-center rounded p-3"
+              style="background-color: #e1e2f9"
+            >
+              <div id="TCSIG-Wellness" class="carousel slide">
+                <div class="carousel-inner" role="listbox">
+                  <h3 class="lead mb-3 fs-2">
+                    TCSIG Wellness Warrior- Fitness Challeng...
+                  </h3>
+                  <div class="carousel-item active bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="card-img">
+                          <div class="ratio ratio-4x3">
+                            <iframe
+                              src="https://www.youtube.com/embed/hWMcnJiIARw"
+                              title="YouTube video"
+                              class="col-lg-12 col-md-12 col-sm-12"
+                              allowfullscreen
+                              loading="lazy"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Wellness Warriors Challenge 2022 Week 1 - WELCOME!
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/nY4k0SCo8jA"
+                            title="YouTube video"
+                            allowfullscreen
+                            loading="lazy"
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Wellness Warriors Challenge Week 2 - DASH Diet &
+                          Nutrition 101
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/IcBXxJ_blts"
+                            title="YouTube video"
+                            allowfullscreen
+                            loading="lazy"
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Wellness Warriors Challenge 2022 Week 3 - BENEFITS OF
+                          WALKING/WORKOUT SNACKS
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="ratio ratio-4x3">
+                          <iframe
+                            src="https://www.youtube.com/embed/_AQqHgtIDco"
+                            title="YouTube video"
+                            allowfullscreen
+                            loading="lazy"
+                            class="col-lg-12 col-md-12 col-sm-12"
+                          ></iframe>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Wellness Warriors Challenge 2022 Week 4 - GROCERY
+                          SHOPPING
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev bg-transparent"
+            href="#TCSIG-Wellness"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon rounded-5 bg-secondary"
+              aria-hidden="true"
+            ></span>
+          </a>
+          <a
+            class="carousel-control-next bg-transparent w-aut"
+            href="#TCSIG-Wellness"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon rounded-5 bg-secondary"
+              aria-hidden="true"
+            ></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="container">
+      <div class="row">
+        <div class="col-md-12 mx-auto position-relative">
+          <div class="container my-3">
+            <div
+              class="row mx-auto my-auto justify-content-center rounded p-3"
+              style="background-color: #e1e2f9"
+            >
+              <div id="COVID-19" class="carousel slide">
+                <div class="carousel-inner" role="listbox">
+                  <h3 class="lead mb-3 fs-2">COVID-19 Test Kit Tutorials</h3>
+                  <div class="carousel-item active bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="card-img">
+                          <div class="ratio ratio-4x3">
+                            <iframe
+                              src="https://www.youtube.com/embed/CtENzECCmG8"
+                              title="YouTube video"
+                              class="col-lg-12 col-md-12 col-sm-12"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          Flowflex SARS-CoV-2 Antigen Rapid Test (Self-testing)
+                        </h6>
+                        <span class="small fw-light px-1">
+                          Flowflex SARS-CoV-2 Antigen Rapid Test (Self-testing)
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active bg-transparent">
+                    <div class="col-md-3">
+                      <div class="card mb-3">
+                        <div class="card-img">
+                          <div class="ratio ratio-4x3">
+                            <iframe
+                              src="https://www.youtube.com/embed/qBt_H4Gc-rU"
+                              title="YouTube video"
+                              class="col-lg-12 col-md-12 col-sm-12"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="fw-light fw-bold small px-1">
+                          How to use the iHealth COVID-19 Antigen Rapid Test
+                        </h6>
+                        <span class="small fw-light px-1">
+                          Self-test at home. Results in 15 mins. Only $8.99 per
+                          test.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="container">
+      <div class="row">
+        <div class="col-12 rounded mx-auto">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.2642871216553!2d-121.62418192397298!3d39.14597013199897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8084ab5781b62129%3A0x185de59ac21c26cf!2sThe%20Wellness%20Center%20(Tri-County%20Schools%20Insurance%20Group%20-%20TCSIG)!5e0!3m2!1sen!2s!4v1686326563760!5m2!1sen!2s"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <div class="d-flex flex-column">
+      <footer class="bg-secondary text-white mt-auto">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>About Company</h5>
+              <img
+                src="./images/TCSIG-Logo.jpeg"
+                alt="Company Logo"
+                class="img-fluid mb-3"
+                width="250"
+              />
+              <p>
+                Our Mission is to pool risk and purchasing power of public
+                entities to provide quality programs to our participants in an
+                effective manner while emphasizing customer satisfaction,
+                stability, financial solvency and cost.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5>Contact Form</h5>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <select
+                    class="form-select"
+                    id="subject"
+                    name="subject"
+                    required
+                  >
+                    <option value>Choose a subject</option>
+                    <option value="employee-benefits">Employee Benefits</option>
+                    <option value="wellness-center">Wellness Center</option>
+                    <option value="workers-comp">Worker's Comp</option>
+                    <option value="property-casualty">
+                      Property / Casualty
+                    </option>
+                    <option value="governance">Governance</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 bg-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <h5>Locations</h5>
+              <ul class="list-unstyled">
+                <li><strong>TCSIG Admin Office</strong></li>
+                <li>530-822-5299</li>
+                <li>400 Plumas Blvd., Suite 210</li>
+                <li>Yuba City, CA 95991</li>
+                <li class="mt-3"><strong>TCSIG Wellness Center</strong></li>
+                <li>530-822-5500</li>
+                <li>1174 Live Oak Blvd.</li>
+                <li>Yuba City, CA 95991</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<script>
+  let items = document.querySelectorAll(".carousel .carousel-item");
+  items.forEach((el) => {
+    const minPerSlide = 4;
+    let next = el.nextElementSibling;
+    for (var i = 1; i < minPerSlide; i++) {
+      if (!next) {
+        next = items[0];
+      }
+      let cloneChild = next.cloneNode(true);
+      el.appendChild(cloneChild.children[0]);
+      next = next.nextElementSibling;
+    }
+  });
+</script>
