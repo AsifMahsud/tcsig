@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Healthcare FAQ | TCSIG</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="description" content />
+    <meta name="keywords" content />
+    <link rel="icon" sizes="192x192" href="./images/site-icon.png" />
+    <meta http-equiv="content-language" content="en-us" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/index.js"></script>
+    <script>
+      function setHeroMinHeight() {
+        var headerHeight = document.querySelector("header").offsetHeight;
+        document.querySelector(".hero-section").style.paddingTop =
+          headerHeight + 80 + "px";
+      }
+
+      window.addEventListener("DOMContentLoaded", setHeroMinHeight);
+      window.addEventListener("resize", setHeroMinHeight);
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+    <style></style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <header class="container position-absolute top-0 start-0 end-0">
+      <!-- header container -->
+      <div class="bg-secondary mx-2 d-lg-flex">
+        <!-- logo -->
+        <div class="logo px-4 py-4 bg-primary">
+          <img
+            src="./images/TCSIG-Logo.jpeg"
+            class="img-fluid"
+            alt="tcsig site icon"
+          />
+        </div>
+        <div class="header-content w-100">
+          <div
+            class="mx-4 mx-lg-0 d-flex justify-content-between justify-content-lg-start align-items-baseline"
+          >
+            <!-- primary nav -->
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler px-4 py-3 bg-primary text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown2"
+                  aria-controls="navbarNavDropdown2"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  MENU <i class="fa-solid fa-bars ps-2"></i>
+                </button>
+                <div
+                  class="collapse navbar-collapse px-2"
+                  id="navbarNavDropdown2"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./about-us.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li
+                      class="nav-item dropdown"
+                      id="employee-benefits-dropdown"
+                    >
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./employee-benefits.html"
+                        >Employee Benefits</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="./medical.html"
+                            >Medical</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./dental.html"
+                            >Dental</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./vision.html"
+                            >Vision</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./prescription-rx.html"
+                            >Prescription RX</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./mental-health.html"
+                            >Mental Health / EAP</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="http://tcsigchiro.com"
+                            target="_blank"
+                            >Chiropractic Services</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./life.html">Life</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./telemedicine.html"
+                            >Telemedicine</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="wellness-center-dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./wellness-center.html"
+                        >Wellness Center</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="./latest-updates.html"
+                            >Latest Updates</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./benefit-summary.html"
+                            >Benefits Summary</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./wellness-center-form.html"
+                            >Wellness Center Forms</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="https://bestlifemedicalcenter.com/tcsig-members/"
+                            target="_blank"
+                            >Best Life Medical</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./televisit.html"
+                            >Televisit</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./healthcare-bluebook.html"
+                            >Healthcare Bluebook</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./healthcare-faq.html"
+                            >FAQ</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./policies.html"
+                            >Policies
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="https://www.tcsig.com/_files/ugd/495bc1_1e10ca3a17aa4148b383cbb59f20bc04.pdf"
+                            target="_blank"
+                            >New Patient Heath and History
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="https://www.tcsig.com/_files/ugd/495bc1_1e10ca3a17aa4148b383cbb59f20bc04.pdf"
+                            target="_blank"
+                            >Wellness Center Notice Of Privacy Practices
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./wellness-center-complain-form.html"
+                            >Compliment/Complaint Form
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="wellness-center-dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./worker-comp.html"
+                        >Worker's Comp</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./about-workers-comp.html"
+                            >About TCSIG Workers Comp</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./certificate-of-insurance.html"
+                            >Certificate of Insurance</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            data-bs-toggle="modal"
+                            data-bs-target="#fullscreenModal"
+                            href="./member-area.html"
+                            >Members Area</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./company-nurse.html"
+                            >Company Nurse</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./risk-management-committee.html"
+                            >Risk Management</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./public-school-works.html"
+                            >Public School Works</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./covid-19-training.html"
+                            >Covid-19 Training</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./athens-administrators.html"
+                            >Athens Administrators
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Property / Casualty</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- search icon -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#searchModal"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="searchModal"
+              tabindex="-1"
+              aria-labelledby="searchModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg position-fixed top-0 end-0"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="fa fa-times text-dark fs-1"></i>
+                  </button>
+                  <div class="modal-body">
+                    <form class="searchform" action="#">
+                      <input
+                        type="search"
+                        class="form-control"
+                        name="search"
+                        value
+                        id="search"
+                        placeholder="Type keyword(s) here and hit Enter …"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- secondary nav and chat icon -->
+          <div class="secondary-nav my-2 my-lg-0 mx-4">
+            <!-- secondary nav -->
+            <nav class="navbar navbar-expand-lg bg-secondary">
+              <button
+                class="navbar-toggler text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="position-relative w-100">
+                <div
+                  class="collapse navbar-collapse position-absolute w-100 bg-light p-4 p-lg-0 rounded"
+                  id="navbarNavDropdown"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Governance</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Documents</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- chat icon -->
+              <a href="#"
+                ><img
+                  src="./images/LynnSisnerosBitmoji.png"
+                  class="img-fluid chat-icon"
+                  alt="TCSIG personality. Lynn bitmoji"
+                  width="80"
+              /></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="hero-section position-relative"
+      style="background-image: url(./images/healthcare-faq-bg.jpg)"
+    >
+      <div
+        class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0"
+      ></div>
+      <div
+        class="container d-flex flex-column justify-content-end position-relative"
+      >
+        <h1 class="text-white">Healthcare FAQ</h1>
+      </div>
+    </section>
+
+    <section class="hero-breadcrumb border-bottom mb-4 py-2">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0">
+            <li class="breadcrumb-item">
+              <a href="./wellness-center.html">Wellness Center</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Healthcare FAQ
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="container mb-5">
+      <div class="col-md-10 mx-auto">
+        <div class="row mb-4">
+          <h2 class="text-center fs-1">Wellness Center FAQ</h2>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6 mb-3">
+            <img src="./images/TCSIG-Logo.jpeg" class="mb-3 img-fluid" alt="" />
+            <h2 class="fs-2 text-secondary mb-2">
+              FREE HEALTHCARE FOR YOU + YOUR FAMILY
+            </h2>
+            <h4 class="text-primary mb-2">at the TCSIG Wellness Center</h4>
+            <span class="text-secondary fs-5"
+              >1174 Live Oak Blvd, Yuba City <br
+            /></span>
+            <span
+              ><a href="" class="text-primary fs-5">(530) 822-5500 <br /></a
+            ></span>
+            <span class="text-secondary fs-5"
+              >Monday-Friday 8:00am to 7:00pm
+              <br />
+              Saturday 9:00am to 3:00pm</span
+            >
+          </div>
+          <div class="col-md-6 mb-3">
+            <img
+              src="./images/healthcare-faq.png"
+              class="img-fluid"
+              width="80%"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+    </section>
+
+    <section class="container mb-5">
+      <div class="col-md-10 mx-auto">
+        <div class="row mb-4">
+          <h2 class="text-center fs-1">Services</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="text-secondary fs-4">Acute Care:</h3>
+            <ul>
+              <li>Allergic Reactions/Rashes</li>
+              <li>Bronchitis</li>
+              <li>Cold/flu</li>
+              <li>Conjunctivitis (Pink eye)</li>
+              <li>Cuts, minor burns, bug bites</li>
+              <li>Ear infections</li>
+              <li>Headache/migraine</li>
+              <li>Muscle and joint pain</li>
+              <li>Nausea/vomiting/diarrhea</li>
+              <li>Sinus infections</li>
+              <li>Sore throat/Strep throat</li>
+              <li>STI Testing</li>
+              <li>Urinary tract infections</li>
+              <li>Wound care</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3 class="text-secondary fs-4">Preventive Care:</h3>
+            <ul>
+              <li>Annual wellness exams (physicals, well baby checks)</li>
+              <li>Immunization update (adult/child vaccinations)</li>
+              <li>Physical (school, sports, work)</li>
+              <li>Women’s health exams</li>
+              <li>Referrals for mammogram/colonoscopy screenings</li>
+              <li>Referrals for specialty consultations</li>
+              <li>Onsite prescription dispensing</li>
+              <li>TB Risk assessment/PPD placement</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3 class="text-secondary fs-4">Disease Management:</h3>
+            <ul>
+              <li>Allergies</li>
+              <li>Asthma</li>
+              <li>Depression</li>
+              <li>Diabetes</li>
+              <li>Emphysema</li>
+              <li>High blood pressure</li>
+              <li>High cholesterol</li>
+              <li>Obesity/Weight management</li>
+              <li>Thyroid conditions</li>
+              <li>Post-Surgery Care</li>
+              <li>Lab services available with in-house Phlebotomist</li>
+              <li>Nutrition counseling with in-house Registered Dietitian</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </section>
+
+    <section class="container mb-5">
+      <div class="col-md-10 mx-auto">
+        <div class="row mb-4">
+          <h2 class="text-center fs-1">THE PATIENT PORTAL</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 text-center">
+            <img
+              src="./images/patient-portal-logo.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-sm-6">
+            <p>Through the Patient Portal via the healow app, you can:</p>
+            <ul>
+              <li class="mb-2">
+                Ask questions of providers, nurses, and staff members
+              </li>
+              <li class="mb-2">
+                Review selected medical records, notes, labs, diagnostic results
+              </li>
+              <li class="mb-2">
+                Request prescription refills, referrals, and appointments via
+                message
+              </li>
+              <li>Access virtual office visits</li>
+            </ul>
+            <p>
+              …All from the comfort of your home, whenever it is convenient for
+              you!
+              <br />
+              Download the Healow app today to take an active role in managing
+              your health care.
+            </p>
+            <a
+              href="https://mycw119.ecwcloud.com/portal16498/jsp/100mp/login_otp.jsp"
+              target="_blank"
+              >https://mycw119.ecwcloud.com/portal16498/jsp/100mp/login_otp.jsp</a
+            >
+          </div>
+        </div>
+      </div>
+      <hr />
+    </section>
+
+    <section class="container mb-2">
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <div class="row mb-4">
+            <h2 class="text-center fs-1">TCSIG Wellness Center FAQ’s</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-12 mb-4">
+              <h5
+                class="mb-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1"
+                aria-expanded="false"
+                aria-controls="faq1"
+              >
+                <div class="d-flex">
+                  <i class="far fa-paper-plane pe-2"></i>
+                  <span>
+                    WHAT ARE THE BENEFITS OF USING THE TCSIG WELLNESS
+                    CENTER?</span
+                  >
+                  <i class="fas fa-angle-down ms-auto"></i>
+                </div>
+              </h5>
+              <div class="collapse" id="faq1">
+                <p class="fw-light">
+                  Cost savings to you – Use of the Wellness Center is FREE to
+                  TCSIG members and their covered dependents. This means you do
+                  not have to pay a copay, deductible, or coinsurance.
+                  <br />
+                  Cost savings to everyone – Our Wellness Center is projected to
+                  reduce costs of the TCSIG Medical plans, which means lower
+                  premium increase over time.
+                  <br />Convenience – The Center is open Monday through Friday,
+                  8:00 AM to 7:00 PM and Saturday 9:00 AM to 3:00 PM. Occasional
+                  walk-ins for acute care can be accommodated, but if you are
+                  not well, please call the office at (530) 822-5500 to schedule
+                  your appointment. It will minimize your discomfort and the
+                  spread of germs by making an appointment and waiting for your
+                  scheduled time.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 mb-4">
+              <h5
+                class="mb-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2"
+                aria-expanded="false"
+                aria-controls="faq2"
+              >
+                <div class="d-flex">
+                  <i class="fas fa-pen-alt pe-2"></i
+                  ><span> WHAT IF I NEED A REFERRAL TO A SPECIALIST? </span>
+                  <i class="fas fa-angle-down ms-auto"></i>
+                </div>
+              </h5>
+
+              <div class="collapse" id="faq2">
+                <p>
+                  We will work closely with you in selecting the highest quality
+                  specialist available to meet your unique needs.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 mb-4">
+              <h5
+                class="mb-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3"
+                aria-expanded="false"
+                aria-controls="faq3"
+              >
+                <div class="d-flex">
+                  <i class="fas fa-user pe-2"></i>
+                  <span> DO YOU ACCEPT WALK-IN PATIENTS? </span>
+                  <i class="fas fa-angle-down ms-auto"></i>
+                </div>
+              </h5>
+              <div class="collapse" id="faq3">
+                <p>
+                  Yes, however we prefer to have you call (530) 822-5500 to set
+                  an appointment.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 mb-4">
+              <h5
+                class="mb-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq4"
+                aria-expanded="false"
+                aria-controls="faq4"
+              >
+                <div class="d-flex">
+                  <i class="fas fa-rocket pe-2"></i
+                  ><span> WHO CAN BE SEEN AT THE TCSIG WELLNESS CENTER? </span>
+                  <i class="fas fa-angle-down ms-auto"></i>
+                </div>
+              </h5>
+              <div class="collapse" id="faq4">
+                <p>
+                  Any TCSIG member or covered family member may receive care
+                  from the Wellness Center.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 mb-4">
+              <h5
+                class="mb-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq5"
+                aria-expanded="false"
+                aria-controls="faq5"
+              >
+                <div class="d-flex">
+                  <i class="fas fa-home pe-2"></i
+                  ><span>
+                    WHAT DO I NEED TO PROVIDE AT THE TIME OF SERVICE?
+                  </span>
+                  <i class="fas fa-angle-down ms-auto"></i>
+                </div>
+              </h5>
+              <div class="collapse" id="faq5">
+                <p>
+                  Center staff will determine your eligibility at the time of
+                  your visit. They will need to see your medical identification
+                  card and a photo ID for verification purposes.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 mb-4">
+              <h5
+                class="mb-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq6"
+                aria-expanded="false"
+                aria-controls="faq6"
+              >
+                <div class="d-flex">
+                  <i class="fas fa-book-open pe-2"></i
+                  ><span>
+                    WHAT SERVICES ARE PROVIDED BY THE WELLNESS CENTER?
+                  </span>
+                  <i class="fas fa-angle-down ms-auto"></i>
+                </div>
+              </h5>
+              <div class="collapse" id="faq6">
+                <ul>
+                  <li>
+                    Preventative Care – Health risk assessments and follow-up
+                    visits, wellness coaching, vaccinations, routine annual
+                    physicals, well-woman exams, birth control, in-house lab
+                    screening (anemia, diabetes, thyroid, and cholesterol).
+                  </li>
+                  <li>
+                    Acute Care – Colds, flus, infections, sore throats, cuts,
+                    sprains, muscle and joint pain.
+                  </li>
+                  <li>
+                    Disease Management – Diabetes, high cholesterol, high blood
+                    pressure, asthma, and allergies.
+                  </li>
+                  <li>Weight Loss</li>
+                  <li>Wound Care Management</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 mb-4">
+              <h5
+                class="mb-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq7"
+                aria-expanded="false"
+                aria-controls="faq7"
+              >
+                <div class="d-flex">
+                  <i class="fas fa-home pe-2"></i
+                  ><span> WHAT SERVICES DO YOU NOT PROVIDE?</span>
+                  <i class="fas fa-angle-down ms-auto"></i>
+                </div>
+              </h5>
+              <div class="collapse" id="faq7">
+                <p>
+                  Chronic pain management or psychiatric services is not
+                  provided.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 mb-4">
+              <h5
+                class="mb-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq8"
+                aria-expanded="false"
+                aria-controls="faq8"
+              >
+                <div class="d-flex">
+                  <i class="fas fa-paper-plane pe-2"></i>
+                  <span
+                    >DO YOU PROVIDE ANY LAB SERVICES OR DIAGNOSTIC
+                    SERVICES?</span
+                  >
+                  <i class="fas fa-angle-down ms-auto"></i>
+                </div>
+              </h5>
+              <div class="collapse" id="faq8">
+                <p>
+                  Outside of the in-house labs mentioned above, we refer out to
+                  diagnostic centers in the area as needed. Any lab service
+                  where blood is drawn in the Wellness Center but sent out to a
+                  diagnostic center is provided at no cost to the patient.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div class="d-flex flex-column">
+      <footer class="bg-secondary text-white mt-auto">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>About Company</h5>
+              <img
+                src="./images/TCSIG-Logo.jpeg"
+                alt="Company Logo"
+                class="img-fluid mb-3"
+                width="250"
+              />
+              <p>
+                Our Mission is to pool risk and purchasing power of public
+                entities to provide quality programs to our participants in an
+                effective manner while emphasizing customer satisfaction,
+                stability, financial solvency and cost.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5>Contact Form</h5>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <select
+                    class="form-select"
+                    id="subject"
+                    name="subject"
+                    required
+                  >
+                    <option value>Choose a subject</option>
+                    <option value="employee-benefits">Employee Benefits</option>
+                    <option value="wellness-center">Wellness Center</option>
+                    <option value="workers-comp">Worker's Comp</option>
+                    <option value="property-casualty">
+                      Property / Casualty
+                    </option>
+                    <option value="governance">Governance</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 bg-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <h5>Locations</h5>
+              <ul class="list-unstyled">
+                <li><strong>TCSIG Admin Office</strong></li>
+                <li>530-822-5299</li>
+                <li>400 Plumas Blvd., Suite 210</li>
+                <li>Yuba City, CA 95991</li>
+                <li class="mt-3"><strong>TCSIG Wellness Center</strong></li>
+                <li>530-822-5500</li>
+                <li>1174 Live Oak Blvd.</li>
+                <li>Yuba City, CA 95991</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Policies | TCSIG</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="description" content />
+    <meta name="keywords" content />
+    <link rel="icon" sizes="192x192" href="./images/site-icon.png" />
+    <meta http-equiv="content-language" content="en-us" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/index.js"></script>
+    <script>
+      function setHeroMinHeight() {
+        var headerHeight = document.querySelector("header").offsetHeight;
+        document.querySelector(".hero-section").style.paddingTop =
+          headerHeight + 80 + "px";
+      }
+
+      window.addEventListener("DOMContentLoaded", setHeroMinHeight);
+      window.addEventListener("resize", setHeroMinHeight);
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+    <style></style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <header class="container position-absolute top-0 start-0 end-0">
+      <!-- header container -->
+      <div class="bg-secondary mx-2 d-lg-flex">
+        <!-- logo -->
+        <div class="logo px-4 py-4 bg-primary">
+          <img
+            src="./images/TCSIG-Logo.jpeg"
+            class="img-fluid"
+            alt="tcsig site icon"
+          />
+        </div>
+        <div class="header-content w-100">
+          <div
+            class="mx-4 mx-lg-0 d-flex justify-content-between justify-content-lg-start align-items-baseline"
+          >
+            <!-- primary nav -->
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler px-4 py-3 bg-primary text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown2"
+                  aria-controls="navbarNavDropdown2"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  MENU <i class="fa-solid fa-bars ps-2"></i>
+                </button>
+                <div
+                  class="collapse navbar-collapse px-2"
+                  id="navbarNavDropdown2"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./about-us.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li
+                      class="nav-item dropdown"
+                      id="employee-benefits-dropdown"
+                    >
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./employee-benefits.html"
+                        >Employee Benefits</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="./medical.html"
+                            >Medical</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./dental.html"
+                            >Dental</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./vision.html"
+                            >Vision</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./prescription-rx.html"
+                            >Prescription RX</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./mental-health.html"
+                            >Mental Health / EAP</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="http://tcsigchiro.com"
+                            target="_blank"
+                            >Chiropractic Services</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./life.html">Life</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./telemedicine.html"
+                            >Telemedicine</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="wellness-center-dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./wellness-center.html"
+                        >Wellness Center</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="./latest-updates.html"
+                            >Latest Updates</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./benefit-summary.html"
+                            >Benefits Summary</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./wellness-center-form.html"
+                            >Wellness Center Forms</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="https://bestlifemedicalcenter.com/tcsig-members/"
+                            target="_blank"
+                            >Best Life Medical</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./televisit.html"
+                            >Televisit</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./healthcare-bluebook.html"
+                            >Healthcare Bluebook</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./healthcare-faq.html"
+                            >FAQ</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./policies.html"
+                            >Policies
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="https://www.tcsig.com/_files/ugd/495bc1_1e10ca3a17aa4148b383cbb59f20bc04.pdf"
+                            target="_blank"
+                            >New Patient Heath and History
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="https://www.tcsig.com/_files/ugd/495bc1_1e10ca3a17aa4148b383cbb59f20bc04.pdf"
+                            target="_blank"
+                            >Wellness Center Notice Of Privacy Practices
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./wellness-center-complain-form.html"
+                            >Compliment/Complaint Form
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="wellness-center-dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./worker-comp.html"
+                        >Worker's Comp</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./about-workers-comp.html"
+                            >About TCSIG Workers Comp</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./certificate-of-insurance.html"
+                            >Certificate of Insurance</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            data-bs-toggle="modal"
+                            data-bs-target="#fullscreenModal"
+                            href="./member-area.html"
+                            >Members Area</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./company-nurse.html"
+                            >Company Nurse</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./risk-management-committee.html"
+                            >Risk Management</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./public-school-works.html"
+                            >Public School Works</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./covid-19-training.html"
+                            >Covid-19 Training</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./athens-administrators.html"
+                            >Athens Administrators
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Property / Casualty</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- search icon -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#searchModal"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="searchModal"
+              tabindex="-1"
+              aria-labelledby="searchModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg position-fixed top-0 end-0"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="fa fa-times text-dark fs-1"></i>
+                  </button>
+                  <div class="modal-body">
+                    <form class="searchform" action="#">
+                      <input
+                        type="search"
+                        class="form-control"
+                        name="search"
+                        value
+                        id="search"
+                        placeholder="Type keyword(s) here and hit Enter …"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- secondary nav and chat icon -->
+          <div class="secondary-nav my-2 my-lg-0 mx-4">
+            <!-- secondary nav -->
+            <nav class="navbar navbar-expand-lg bg-secondary">
+              <button
+                class="navbar-toggler text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="position-relative w-100">
+                <div
+                  class="collapse navbar-collapse position-absolute w-100 bg-light p-4 p-lg-0 rounded"
+                  id="navbarNavDropdown"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Governance</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Documents</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- chat icon -->
+              <a href="#"
+                ><img
+                  src="./images/LynnSisnerosBitmoji.png"
+                  class="img-fluid chat-icon"
+                  alt="TCSIG personality. Lynn bitmoji"
+                  width="80"
+              /></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="hero-section position-relative"
+      style="background-image: url(./images/policies-bg.jpg)"
+    >
+      <div
+        class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0"
+      ></div>
+      <div
+        class="container d-flex flex-column justify-content-end position-relative"
+      >
+        <h1 class="text-white">Policies</h1>
+      </div>
+    </section>
+
+    <section class="hero-breadcrumb border-bottom mb-4 py-2">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0">
+            <li class="breadcrumb-item">
+              <a href="./wellness-center.html">Wellness Center</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Policies</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="container mb-5">
+      <div class="col-md-8 mx-auto">
+        <div class="row mb-4">
+          <h2 class="text-center fs-1">
+            ACORN HEALTH GROUP POLICY & PROCEDURES for Pediatric Patients
+          </h2>
+          <div class="text-center">
+            <a
+              href="https://www.tcsig.com/_files/ugd/81a2b2_d833f16976b84ec893a3ac18ed10068e.pdf"
+              class="btn btn-primary bg-primary"
+              >Click Here To Get Policies Form I n PDF</a
+            >
+          </div>
+        </div>
+        <div class="row mb-4">
+          <h3 class="text-secondary">Mission:</h3>
+          <p class="mb-4">
+            To provide pediatric TCSIG members with access to services related
+            to non-emergency acute care, sports physicals, and school physicals
+            at the TCSIG Wellness Center.
+          </p>
+          <h3 class="text-secondary">Policy:</h3>
+          <p class="mb-4">
+            Children deserve high-quality, appropriate, and safe medical care.
+            To that end, it is the policy of Acorn Health Group that the TCSIG
+            Wellness Center adheres to the guidelines and recommendations of the
+            American Academy of Pediatrics (AAP).
+            <br />
+            We realize the wellness center is a benefit for TCSIG members and
+            their families. However, the TCSIG Wellness Center medical services
+            are limited to non-emergency acute care, sports physicals, and
+            school physicals. TCSIG Wellness Center providers do not have the
+            specialized pediatric medical training required to address the
+            medical needs of children under the age of 24 months or any
+            pediatric emergency.
+            <br />
+            As such, the TCSIG Wellness Center does not provide care for
+            patients under 24 months of age or any medical emergency for a
+            pediatric patient of any age.
+            <br />
+            Additionally, the TCSIG Wellness Center is not to be used as a
+            primary care office for pediatric patients. All pediatric patients
+            seen at the TCSIG Wellness Center are required to have a
+            pediatrician or family practice physician as their primary care
+            provider (PCP).
+          </p>
+          <h3 class="text-secondary">Procedure:</h3>
+          <div class="row mb-4">
+            <div class="col-12">
+              <h3 class="fs-5">Acute Care:</h3>
+              <p>
+                TCSIG Wellness Center is dedicated to bridging the gap in the
+                healthcare setting by assuring appropriate coordination of care.
+                Complete and timely medical records will be maintained and
+                shared with the patient’s PCP when requested or determined
+                necessary by our medical providers.
+              </p>
+              <ul>
+                <li class="mb-1">
+                  Our healthcare team will confirm and document the patient’s
+                  PCP in the “Yellow Sticky Note” section of the patient’s
+                  chart.
+                </li>
+                <li class="mb-1">
+                  If the patient does not have a PCP, a list of local
+                  pediatricians and family practice physicians will be provided
+                  to the parent/guardian. A follow up appointment will be made
+                  by the TCSIG Wellness Center for the patient with the PCP of
+                  their choice.
+                </li>
+                <li class="mb-1">
+                  Parent or Guardian will sign an authorization for a release of
+                  medical information to ensure collaboration between TCSIG
+                  Wellness Center and patient’s PCP.
+                </li>
+                <li class="mb-1">
+                  Under the Health Insurance Portability and Accountability Act
+                  (Pub L No. 104-191 [1996]), permission to share personal
+                  health information with another provider for the purposes of
+                  treatment does not require patient/parent authorization.
+                </li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <h3 class="fs-5">Scope of Care:</h3>
+              <ul>
+                <li class="mb-1">
+                  Children must be over 2 years (24 months) of age or older to
+                  be seen by a medical provider at TCSIG Wellness Center.
+                </li>
+                <li class="mb-1">
+                  Children younger than 2 years of age will be referred to a
+                  higher level of care.
+                </li>
+                <li class="mb-1">
+                  Children requiring a referral to a specialist must have their
+                  PCP make the referral.
+                </li>
+                <li class="mb-1">
+                  Acute Care- patient may receive non-emergency acute care
+                  services in-office, curbside, or telephonically.
+                </li>
+                <li class="mb-1">
+                  Providers will use their discretion in determining if the
+                  scope of caring for any given patient is beyond their skill
+                  level. In such cases, the provider will direct, and if
+                  necessary, help arrange for the patient’s medical care at a
+                  facility able to provide the appropriate level of care.
+                </li>
+                <li class="mb-1">
+                  Sports Physicals- patient can receive services for the purpose
+                  of a physical clearance to participate in sports activities.
+                </li>
+                <li class="mb-1">
+                  School Physicals- patient can receive services for the purpose
+                  of completing a school physical which may include vision and
+                  hearing screening as well as immunization update. Immunization
+                  record must be made available by the child’s parent/guardian
+                  or verified in CAIR. Immunizations will not be provided if the
+                  record is unverifiable.
+                </li>
+                <li class="mb-1">
+                  <strong
+                    >Medical services will not be provided for chronic or
+                    complex conditions including behavioral health issues,
+                    well-baby exams and routine immunizations, nor for
+                    whole-person care including health care issues affected by
+                    social determinants of health.</strong
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <h3 class="text-secondary">
+              MEDICAL APPOINTMENT CANCELLATION/NO SHOW POLICY
+            </h3>
+            <p>
+              Thank you for trusting your medical care to TCSIG Wellness Center.
+              When you schedule an appointment with TCSIG Wellness Center we set
+              aside enough time to provide you with the highest quality care.
+              Should you need to cancel or reschedule an appointment please
+              contact our office as soon as possible, and no later than 24 hours
+              prior to your scheduled appointment. This gives us time to
+              schedule other patients who may be waiting for an appointment.
+              Please see our Appointment Cancellation/No Show Policy below:
+            </p>
+            <div>
+              <ul>
+                <li class="mb-1">
+                  Effective April 20, 2021 any established patient who fails to
+                  show for an appointment and has not contacted our office with
+                  <strong> at least 24 hours notice</strong> will be considered
+                  a No Show.
+                </li>
+                <li class="mb-1">
+                  Any established patient who fails to show for an appointment
+                  without <strong> 24 hours notice a second time </strong> will
+                  be provided a warning letter for termination.
+                </li>
+                <li class="mb-1">
+                  If a <strong> third </strong>No Show without 24 hours notice
+                  should occur the patient will be
+                  <strong> dismissed </strong>from TCSIG Wellness Center.
+                </li>
+                <li class="mb-1">
+                  As a courtesy, our clinic initiates calls and text messages to
+                  remind patients of their upcoming appointments. If you do not
+                  receive a reminder call or message, the above Policy will
+                  remain in effect.
+                </li>
+              </ul>
+            </div>
+            <p>
+              We understand there may be times when an unforeseen emergency
+              occurs and you may not be able to keep your scheduled appointment.
+              If you should experience extenuating circumstances please contact
+              our Clinic Manager, who may be able to waive the No Show. You may
+              contact TCSIG Wellness Center Monday-Friday from 8:00 am to 7:00
+              pm and Saturdays from 9:00 am to 3:00 pm. Should it be after
+              regular business hours Monday through Saturday, or on Sunday, you
+              may leave a message. Messages left are acceptable.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-center text-primary">
+              TCSIG Wellness Center (530) 822-5500
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div class="d-flex flex-column">
+      <footer class="bg-secondary text-white mt-auto">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>About Company</h5>
+              <img
+                src="./images/TCSIG-Logo.jpeg"
+                alt="Company Logo"
+                class="img-fluid mb-3"
+                width="250"
+              />
+              <p>
+                Our Mission is to pool risk and purchasing power of public
+                entities to provide quality programs to our participants in an
+                effective manner while emphasizing customer satisfaction,
+                stability, financial solvency and cost.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5>Contact Form</h5>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <select
+                    class="form-select"
+                    id="subject"
+                    name="subject"
+                    required
+                  >
+                    <option value>Choose a subject</option>
+                    <option value="employee-benefits">Employee Benefits</option>
+                    <option value="wellness-center">Wellness Center</option>
+                    <option value="workers-comp">Worker's Comp</option>
+                    <option value="property-casualty">
+                      Property / Casualty
+                    </option>
+                    <option value="governance">Governance</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 bg-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <h5>Locations</h5>
+              <ul class="list-unstyled">
+                <li><strong>TCSIG Admin Office</strong></li>
+                <li>530-822-5299</li>
+                <li>400 Plumas Blvd., Suite 210</li>
+                <li>Yuba City, CA 95991</li>
+                <li class="mt-3"><strong>TCSIG Wellness Center</strong></li>
+                <li>530-822-5500</li>
+                <li>1174 Live Oak Blvd.</li>
+                <li>Yuba City, CA 95991</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

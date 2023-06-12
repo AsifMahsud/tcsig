@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Healthcare Bluebook | TCSIG</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="description" content />
+    <meta name="keywords" content />
+    <link rel="icon" sizes="192x192" href="./images/site-icon.png" />
+    <meta http-equiv="content-language" content="en-us" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/index.js"></script>
+    <script>
+      function setHeroMinHeight() {
+        var headerHeight = document.querySelector("header").offsetHeight;
+        document.querySelector(".hero-section").style.paddingTop =
+          headerHeight + 80 + "px";
+      }
+
+      window.addEventListener("DOMContentLoaded", setHeroMinHeight);
+      window.addEventListener("resize", setHeroMinHeight);
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+    <style>
+      .carousel-item {
+        position: relative;
+      }
+
+      .carousel-caption {
+        position: absolute;
+        top: 83%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .televisit-video {
+        width: -webkit-fill-available;
+      }
+
+      .iframe-responsive {
+        width: -webkit-fill-available;
+        height: 310px;
+      }
+      .healtcare-app-images {
+        max-width: 90%;
+      }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <header class="container position-absolute top-0 start-0 end-0">
+      <!-- header container -->
+      <div class="bg-secondary mx-2 d-lg-flex">
+        <!-- logo -->
+        <div class="logo px-4 py-4 bg-primary">
+          <img
+            src="./images/TCSIG-Logo.jpeg"
+            class="img-fluid"
+            alt="tcsig site icon"
+          />
+        </div>
+        <div class="header-content w-100">
+          <div
+            class="mx-4 mx-lg-0 d-flex justify-content-between justify-content-lg-start align-items-baseline"
+          >
+            <!-- primary nav -->
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler px-4 py-3 bg-primary text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown2"
+                  aria-controls="navbarNavDropdown2"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  MENU <i class="fa-solid fa-bars ps-2"></i>
+                </button>
+                <div
+                  class="collapse navbar-collapse px-2"
+                  id="navbarNavDropdown2"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./about-us.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li
+                      class="nav-item dropdown"
+                      id="employee-benefits-dropdown"
+                    >
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./employee-benefits.html"
+                        >Employee Benefits</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="./medical.html"
+                            >Medical</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./dental.html"
+                            >Dental</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./vision.html"
+                            >Vision</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./prescription-rx.html"
+                            >Prescription RX</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./mental-health.html"
+                            >Mental Health / EAP</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="http://tcsigchiro.com"
+                            target="_blank"
+                            >Chiropractic Services</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./life.html">Life</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./telemedicine.html"
+                            >Telemedicine</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="wellness-center-dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./wellness-center.html"
+                        >Wellness Center</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="./latest-updates.html"
+                            >Latest Updates</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./benefit-summary.html"
+                            >Benefits Summary</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./wellness-center-form.html"
+                            >Wellness Center Forms</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="https://bestlifemedicalcenter.com/tcsig-members/"
+                            target="_blank"
+                            >Best Life Medical</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./televisit.html"
+                            >Televisit</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./healthcare-bluebook.html"
+                            >Healthcare Bluebook</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./healthcare-faq.html"
+                            >FAQ</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./policies.html"
+                            >Policies
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="https://www.tcsig.com/_files/ugd/495bc1_1e10ca3a17aa4148b383cbb59f20bc04.pdf"
+                            target="_blank"
+                            >New Patient Heath and History
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="https://www.tcsig.com/_files/ugd/495bc1_1e10ca3a17aa4148b383cbb59f20bc04.pdf"
+                            target="_blank"
+                            >Wellness Center Notice Of Privacy Practices
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./wellness-center-complain-form.html"
+                            >Compliment/Complaint Form
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="wellness-center-dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./worker-comp.html"
+                        >Worker's Comp</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./about-workers-comp.html"
+                            >About TCSIG Workers Comp</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./certificate-of-insurance.html"
+                            >Certificate of Insurance</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            data-bs-toggle="modal"
+                            data-bs-target="#fullscreenModal"
+                            href="./member-area.html"
+                            >Members Area</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./company-nurse.html"
+                            >Company Nurse</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./risk-management-committee.html"
+                            >Risk Management</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./public-school-works.html"
+                            >Public School Works</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./covid-19-training.html"
+                            >Covid-19 Training</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./athens-administrators.html"
+                            >Athens Administrators
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Property / Casualty</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- search icon -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#searchModal"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="searchModal"
+              tabindex="-1"
+              aria-labelledby="searchModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg position-fixed top-0 end-0"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="fa fa-times text-dark fs-1"></i>
+                  </button>
+                  <div class="modal-body">
+                    <form class="searchform" action="#">
+                      <input
+                        type="search"
+                        class="form-control"
+                        name="search"
+                        value
+                        id="search"
+                        placeholder="Type keyword(s) here and hit Enter …"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- secondary nav and chat icon -->
+          <div class="secondary-nav my-2 my-lg-0 mx-4">
+            <!-- secondary nav -->
+            <nav class="navbar navbar-expand-lg bg-secondary">
+              <button
+                class="navbar-toggler text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="position-relative w-100">
+                <div
+                  class="collapse navbar-collapse position-absolute w-100 bg-light p-4 p-lg-0 rounded"
+                  id="navbarNavDropdown"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Governance</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Documents</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- chat icon -->
+              <a href="#"
+                ><img
+                  src="./images/LynnSisnerosBitmoji.png"
+                  class="img-fluid chat-icon"
+                  alt="TCSIG personality. Lynn bitmoji"
+                  width="80"
+              /></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="hero-section position-relative"
+      style="background-image: url(./images/healcare-bluebook-bg.jpg)"
+    >
+      <div
+        class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0"
+      ></div>
+      <div
+        class="container d-flex flex-column justify-content-end position-relative"
+      >
+        <h1 class="text-white">Healthcare Bluebook</h1>
+      </div>
+    </section>
+
+    <section class="hero-breadcrumb border-bottom mb-4 py-2">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0">
+            <li class="breadcrumb-item">
+              <a href="./wellness-center.html">Wellness Center</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Healthcare Bluebook
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="container mb-5" id="televisit">
+      <div class="col-md-10 mx-auto">
+        <div class="row mb-4">
+          <h2 class="text-center">Healthcare Bluebook</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              is a FREE added healthcare benefit to help you shop for care,
+              compare facilities, save money on healthcare services, and earn
+              rewards. The web and mobile applications make it easy to save
+              money on hundreds of the most common medical services and
+              procedures by showing you the cost ranges in your area, and
+              providing you with a selection of FAIR PRICE facilities.
+            </p>
+            <a
+              href="https://www.healthcarebluebook.com/ui/home"
+              target="_blank"
+              class="btn btn-primary bg-primary mb-3 py-2"
+              >VISIT WEBSITE</a
+            >
+            <br />
+            <a
+              href="https://www.tcsig.com/_files/ugd/495bc1_6c5e60efa595447db710ca504b0c929a.pdf"
+              target="_blank"
+              class="mb-3"
+              >Healthcare Bluebook Updates
+            </a>
+            <br />
+            <span class="mb-3">
+              If you cannot register or login, contact Healthcare Bluebook at:
+            </span>
+            <ul>
+              <li class="mb-1">
+                <a href="tel: +800-341-0504">800-341-0504</a>
+              </li>
+              <li class="mb-1">
+                <a href="mailto: support@healthcarebluebook.com"
+                  >support@healthcarebluebook.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item iframe-responsive"
+                src="https://www.youtube.com/embed/ncexYPx5dfY"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h3 class="lead">Shopping for Care</h3>
+            <p class="fw-light">
+              This simple tutorial teaches users how to shop for care and earn a
+              reward.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="col-md-10 mx-auto">
+        <div class="row">
+          <div class="col-md-6">
+            <video controls class="televisit-video mb-3 border border-1">
+              <source
+                src="./vidoes/healthcare-bluebook-video-1.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <h3 class="lead">Mobile App Setup End User Video</h3>
+            <p class="fw-light">
+              This video shows employees how to setup the Bluebook mobile app so
+              that they have the power to find high-quality low-cost healthcare
+              anytime, anywhere.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <video controls class="televisit-video mb-3 border border-1">
+              <source
+                src="./vidoes/healthcare-bluebook-video-2.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <h3 class="lead">Blueman Video Shop Cost Quality & Rewards</h3>
+            <p class="fw-light">
+              This animated video is a great way to educate your employees on
+              the differences in cost between facilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-2">
+      <div class="row mb-2">
+        <div class="col-md-8 mx-auto text-center">
+          <img
+            src="./images/check-it-out.jpeg"
+            class="img-fluid"
+            alt="check it out"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="row text-center">
+            <div class="col-md-4">
+              <img
+                src="./images/healthcare-app.jpeg"
+                class="healtcare-app-images h-auto mb-3"
+                alt=""
+              />
+            </div>
+            <div class="col-md-8">
+              <img
+                src="./images/healtcare-app-1.jpeg"
+                class="healtcare-app-images h-auto mb-3"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div class="d-flex flex-column">
+      <footer class="bg-secondary text-white mt-auto">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>About Company</h5>
+              <img
+                src="./images/TCSIG-Logo.jpeg"
+                alt="Company Logo"
+                class="img-fluid mb-3"
+                width="250"
+              />
+              <p>
+                Our Mission is to pool risk and purchasing power of public
+                entities to provide quality programs to our participants in an
+                effective manner while emphasizing customer satisfaction,
+                stability, financial solvency and cost.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5>Contact Form</h5>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <select
+                    class="form-select"
+                    id="subject"
+                    name="subject"
+                    required
+                  >
+                    <option value>Choose a subject</option>
+                    <option value="employee-benefits">Employee Benefits</option>
+                    <option value="wellness-center">Wellness Center</option>
+                    <option value="workers-comp">Worker's Comp</option>
+                    <option value="property-casualty">
+                      Property / Casualty
+                    </option>
+                    <option value="governance">Governance</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 bg-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <h5>Locations</h5>
+              <ul class="list-unstyled">
+                <li><strong>TCSIG Admin Office</strong></li>
+                <li>530-822-5299</li>
+                <li>400 Plumas Blvd., Suite 210</li>
+                <li>Yuba City, CA 95991</li>
+                <li class="mt-3"><strong>TCSIG Wellness Center</strong></li>
+                <li>530-822-5500</li>
+                <li>1174 Live Oak Blvd.</li>
+                <li>Yuba City, CA 95991</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<script>
+  $(document).ready(function () {
+    $(".carousel-item").hover(
+      function () {
+        $(this).find(".carousel-caption").removeClass("d-none");
+      },
+      function () {
+        $(this).find(".carousel-caption").addClass("d-none");
+      }
+    );
+  });
+</script>
