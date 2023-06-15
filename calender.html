@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calendar | TCSIG</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="description" content />
+    <meta name="keywords" content />
+    <link rel="icon" sizes="192x192" href="./images/site-icon.png" />
+    <meta http-equiv="content-language" content="en-us" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      function setHeroMinHeight() {
+        var headerHeight = document.querySelector("header").offsetHeight;
+        document.querySelector(".hero-section").style.paddingTop =
+          headerHeight + 80 + "px";
+      }
+
+      window.addEventListener("DOMContentLoaded", setHeroMinHeight);
+      window.addEventListener("resize", setHeroMinHeight);
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="container position-absolute top-0 start-0 end-0">
+      <!-- header container -->
+      <div class="bg-secondary mx-2 d-lg-flex">
+        <!-- logo -->
+        <div class="logo px-4 py-4 bg-primary">
+          <img
+            src="./images/TCSIG-Logo.jpeg"
+            class="img-fluid"
+            alt="tcsig site icon"
+          />
+        </div>
+        <div class="header-content w-100">
+          <div
+            class="mx-4 mx-lg-0 d-flex justify-content-between justify-content-lg-start align-items-baseline"
+          >
+            <!-- primary nav -->
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler px-4 py-3 bg-primary text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown2"
+                  aria-controls="navbarNavDropdown2"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  MENU <i class="fa-solid fa-bars ps-2"></i>
+                </button>
+                <div
+                  class="collapse navbar-collapse px-2"
+                  id="navbarNavDropdown2"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./about-us.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li
+                      class="nav-item dropdown"
+                      id="employee-benefits-dropdown"
+                    >
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./employee-benefits.html"
+                        >Employee Benefits</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="./medical.html"
+                            >Medical</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./dental.html"
+                            >Dental</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./vision.html"
+                            >Vision</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./prescription-rx.html"
+                            >Prescription RX</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./mental-health.html"
+                            >Mental Health / EAP</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="http://tcsigchiro.com"
+                            target="_blank"
+                            >Chiropractic Services</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./life.html">Life</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./telemedicine.html"
+                            >Telemedicine</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Wellness Center</a>
+                    </li>
+                    <li class="nav-item dropdown" id="wellness-center-dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./worker-comp.html"
+                        >Worker's Comp</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./about-workers-comp.html"
+                            >About TCSIG Workers Comp</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./certificate-of-insurance.html"
+                            >Certificate of Insurance</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./company-nurse.html"
+                            >Company Nurse</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./risk-management-committee.html"
+                            >Risk Management</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./public-school-works.html"
+                            >Public School Works</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./covid-19-training.html"
+                            >Covid-19 Training</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./athens-administrators.html"
+                            >Athens Administrators
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="property.html"
+                        >Property / Casualty</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- search icon -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#searchModal"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="searchModal"
+              tabindex="-1"
+              aria-labelledby="searchModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg position-fixed top-0 end-0"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="fa fa-times text-dark fs-1"></i>
+                  </button>
+                  <div class="modal-body">
+                    <form class="searchform" action="#">
+                      <input
+                        type="search"
+                        class="form-control"
+                        name="search"
+                        value
+                        id="search"
+                        placeholder="Type keyword(s) here and hit Enter …"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- secondary nav and chat icon -->
+          <div class="secondary-nav my-2 my-lg-0 mx-4">
+            <!-- secondary nav -->
+            <nav class="navbar navbar-expand-lg bg-secondary">
+              <button
+                class="navbar-toggler text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="position-relative w-100">
+                <div
+                  class="collapse navbar-collapse position-absolute w-100 bg-light p-4 p-lg-0 rounded"
+                  id="navbarNavDropdown"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown" id="wellness-center-dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./worker-comp.html"
+                        >Governance</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="./calender.html"
+                            >Meeting Calender</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./joint-power-board.html"
+                            >Joint Powers Board
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./risk-management-committee.html"
+                            >Risk Management</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./financial-audit.html"
+                            >Financial Audits</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Documents</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- chat icon -->
+              <a href="#"
+                ><img
+                  src="./images/LynnSisnerosBitmoji.png"
+                  class="img-fluid chat-icon"
+                  alt="TCSIG personality. Lynn bitmoji"
+                  width="80"
+              /></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="hero-section position-relative"
+      style="background-image: url(./images/calender-bg.jpg)"
+    >
+      <div
+        class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0"
+      ></div>
+      <div
+        class="container d-flex flex-column justify-content-end position-relative"
+      >
+        <h1 class="text-white">Calendar</h1>
+      </div>
+    </section>
+    <section class="hero-breadcrumb border-bottom mb-4 py-2">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0">
+            <li class="breadcrumb-item">
+              <a href="./worker-comp.html">Governance</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Calendar</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="container mb-5">
+      <div class="row mb-5">
+        <div class="col-sm-11 mx-auto fw-light">
+          <h2 class="text-center fs-1 mb-3" id="2023">2023</h2>
+          <table class="table table-striped table-bordered">
+            <thead class="text-center">
+              <tr class="bg-secondary text-white">
+                <th>DATE</th>
+                <th>TIME</th>
+                <th>LOCATION</th>
+                <th>MINUTES</th>
+                <th>MEETING</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_2bb227ce629c4d05850d249800aa4c38.pdf"
+                    target="_blank"
+                    >January 20, 2023</a
+                  >
+                </td>
+                <td>12:30 p.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/81118260990?pwd=L1RqZDJUUDhiMTl2TUFESVZJS0t5Zz09&from=addon"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_42deecb382714d70ae53d4abe017915b.pdf"
+                    target="_blank"
+                    >February 10, 2023</a
+                  >
+                </td>
+                <td>9:15 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/85189811778?pwd=MXVoQ2tncTRSWDc0WEhjeVVKTUZ4Zz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td></td>
+                <td>Special Executive Comm. (Rate Setting)</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_19b0bdca3b704e33a9db892b938b6b4d.pdf"
+                    target="_blank"
+                    >February 10, 2023</a
+                  >
+                </td>
+                <td>9:30 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/85189811778?pwd=MXVoQ2tncTRSWDc0WEhjeVVKTUZ4Zz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td></td>
+                <td>Executive Committee</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_f7a209dcdfff41e29984d5c9a1918f26.pdf"
+                    target="_blank"
+                  ></a>
+                  March 10, 2023
+                </td>
+                <td>1:00 p.m.</td>
+                <td>400 Plumas Blvd, Yuba City, CA 95991</td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_c30b197f0bbd4f7ab699126fee7ab710.pdf"
+                    target="_blank"
+                    >March 17, 2023</a
+                  >
+                </td>
+                <td>3:00 p.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/87476275599?pwd=TEdBY3lYYTRSQ0p6YlBCTHdkRzBOUT09&from=addon"
+                    target="_blank"
+                    >400 Plumas Blvd, Yuba City, CA 95991/ Join Zoom Meeting
+                  </a>
+                </td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_abed6b99f41f427ab5f4c0c062e460a2.pdf"
+                    target="_blank"
+                  ></a>
+                  March 24, 2023
+                </td>
+                <td>10:00 a.m.</td>
+                <td>400 Plumas Blvd, Yuba City, CA 95991</td>
+                <td></td>
+                <td>Executive Committee</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_db4c304c3a294ca68022515473168a86.pdf"
+                    target="_blank"
+                    >March 24, 2023</a
+                  >
+                </td>
+                <td>12:00 p.m.</td>
+                <td>400 Plumas Blvd, Yuba City, CA 95991</td>
+                <td></td>
+                <td>Joint Powers Board</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_064daf1dcf314c03a5d2e6715631f2c5.pdf"
+                    target="_blank"
+                    >April 21, 2023</a
+                  >
+                </td>
+                <td>12:00 p.m.</td>
+                <td>400 Plumas Blvd, Yuba City, CA 95991</td>
+                <td></td>
+                <td>Special Property/Casualty Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_03a7c811f0d54d9f9da5c76858ee12be.pdf"
+                    target="_blank"
+                    >May 04, 2023</a
+                  >
+                </td>
+                <td>3:00 p.m.</td>
+                <td>400 Plumas Blvd, Yuba City, CA 95991</td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_59db840fd04f4a939ec03b16d0594549.pdf"
+                    target="_blank"
+                    >May 12, 2023</a
+                  >
+                </td>
+                <td>9:30 a.m.</td>
+                <td>400 Plumas Blvd, Yuba City, CA 95991</td>
+                <td></td>
+                <td>Executive Committee</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_8ad9f222d0db407098aae3ba624886ca.pdf"
+                    target="_blank"
+                  >
+                    June 07, 2023</a
+                  >
+                </td>
+                <td>1:00 p.m.</td>
+                <td>400 Plumas Blvd, Yuba City, CA 95991</td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>June 16, 2023</td>
+                <td>9:15 a.m.</td>
+                <td>400 Plumas Blvd, Yuba City, CA 95991</td>
+                <td></td>
+                <td>Executive Committee</td>
+              </tr>
+              <tr>
+                <td>August 11, 2023</td>
+                <td>10:00 a.m.</td>
+                <td>400 Plumas Blvd, Yuba City, CA 95991</td>
+                <td></td>
+                <td>Executive Committee</td>
+              </tr>
+              <tr>
+                <td>Sept. 20-22, 2023</td>
+                <td>TBD</td>
+                <td>Resort at Squaw Creek</td>
+                <td></td>
+                <td>Executive Committee (Planning)</td>
+              </tr>
+              <tr>
+                <td>December 01, 2023</td>
+                <td>9:30 a.m.</td>
+                <td>400 Plumas Blvd, Yuba City, CA 95991</td>
+                <td></td>
+                <td>Executive Committee</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-sm-11 mx-auto fw-light">
+          <h2 class="text-center fs-1 mb-3" id="2022">2022</h2>
+          <table class="table table-striped table-bordered">
+            <thead class="text-center">
+              <tr class="bg-secondary text-white">
+                <th>DATE</th>
+                <th>TIME</th>
+                <th>LOCATION</th>
+                <th>MINUTES</th>
+                <th>MEETING</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_60f9fada8c364c1f995e32f3eb97b596.pdf"
+                    target="_blank"
+                    >January 21, 2022</a
+                  >
+                </td>
+                <td>11:00 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/89453215459?pwd=d0dZbVFEQmh0VUE2THdld0hjMTF0dz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_382285b73d5b44edaf5ffc81d89f4616.pdf"
+                    target="_blank"
+                    >February 3, 2022</a
+                  >
+                </td>
+                <td>1:30 p.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/87645718731?pwd=bWovTWlidURNRGlVYlAxR3lHVmFyZz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td></td>
+                <td>Special Executive Comm. (Rate Setting)</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_6db45ab91579417ab056ed0ffd879158.pdf"
+                    target="_blank"
+                    >February 11, 2022</a
+                  >
+                </td>
+                <td>9:15 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/84788036155?pwd=eWJ5S0J5TDNiTWJjalZkWFphaGNCdz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_5134c3f74ef14bf29a6cf30b23ec61bb.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Special Executive Committee Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_f8b4747f896745a5b19d04614ce94d2e.pdf"
+                    target="_blank"
+                    >February 11, 2022</a
+                  >
+                </td>
+                <td>9:30 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/84788036155?pwd=eWJ5S0J5TDNiTWJjalZkWFphaGNCdz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_095adbbdd21d4082aa5e91b6435e11f9.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Executive Comm. (Rate Setting)</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_8e7af759171f48148f4404112def8870.pdf"
+                    target="_blank"
+                    >March 18, 2022</a
+                  >
+                </td>
+                <td>1:00 p.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/81648110371?pwd=T1g1azBZN3gyY0k2WFdMU2ErVEUrdz09#success"
+                    target="_blank"
+                    >Join Zoom Meeting</a
+                  >
+                </td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_670280dcc9234d9dac55c4a888958fb2.pdf"
+                    target="_blank"
+                    >March 25, 2022</a
+                  >
+                </td>
+                <td>9:45 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/82266429071?pwd=VmRWMy8rbWlldGFnazIyT1FSVnkwQT09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_8cdb33c0831b419b8a58759958fda1b0.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Special Executive Committee Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_4a2280e320b3408b8f29b407a1fbbafa.pdf"
+                    target="_blank"
+                    >March 25, 2022</a
+                  >
+                </td>
+                <td>10:00 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/82266429071?pwd=VmRWMy8rbWlldGFnazIyT1FSVnkwQT09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_4ee29716b0fe49e1b7c922fcf76d9072.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Executive Committee</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_8b5fcbde211844e5ad9391407bcb3d5d.pdf"
+                    target="_blank"
+                    >March 25, 2022</a
+                  >
+                </td>
+                <td>12:00 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/82266429071?pwd=VmRWMy8rbWlldGFnazIyT1FSVnkwQT09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_b865e402467640aaa12a7b6c1191207d.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Joint Powers Board</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_0f52f28739d34dc8a00826fcc263543b.pdf"
+                    target="_blank"
+                    >May 10, 2022</a
+                  >
+                </td>
+                <td>10:00 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/81625560377?pwd=SXdMYnQxdjBOTDQySE03ZDlwS0RmZz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_25247c22ba6943ddace5df317e0cf5d6.pdf"
+                    target="_blank"
+                    >May 13, 2022</a
+                  >
+                </td>
+                <td>9:15 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/89684204196?pwd=VzhFVjBJMmxUdmxLM1pOeUE2Y0Z6Zz09#success"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_2829e722685b4c228bca5e56913d725e.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Special Executive Committee Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_37fe1ebf072c4a8eb88cd041b5093105.pdf"
+                    target="_blank"
+                    >May 13, 2022</a
+                  >
+                </td>
+                <td>9:15 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/89684204196?pwd=VzhFVjBJMmxUdmxLM1pOeUE2Y0Z6Zz09#success"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_4de0593c80a94d78aad334084bbb4f2b.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Executive Committee</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_7a33dbcf13174adbbbae822bb1fb7d2b.pdf"
+                    target="_blank"
+                    >June 03, 2022</a
+                  >
+                </td>
+                <td>12:00 p.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/89064949112?pwd=OS9RSUNLV3NjTWIyUnU5enhNOXY3Zz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_5d7e12c921c0472fb1b7e7a71e0197bd.pdf"
+                    target="_blank"
+                    >June 17, 2022</a
+                  >
+                </td>
+                <td>9:15 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/87854708899?pwd=UVhFUmJ1WGk3cW5XL3hnUHZWeTRQdz09#success"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_c9bbc29e4a32476aaafa33afdf327e63.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Special Executive Committee</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_264a5e36fc794d3b83e7652bbf9c3406.pdf"
+                    target="_blank"
+                    >June 17, 2022</a
+                  >
+                </td>
+                <td>9:30 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/87854708899?pwd=UVhFUmJ1WGk3cW5XL3hnUHZWeTRQdz09#success"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_8670b0a2181b4acbab2507a7f08eb7fb.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Executive Committee</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_ba3d85145b3b472f81d544e69bc35890.pdf"
+                    target="_blank"
+                    >August 02, 2022</a
+                  >
+                </td>
+                <td>1:00 p.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/87469832996?pwd=WEpYZU1lRTJaUVV2R0NIc3F4QWJDZz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_a42cf4d8244b449ab8def004713fd2cd.pdf"
+                    target="_blank"
+                    >August 12, 2022</a
+                  >
+                </td>
+                <td>10:00 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/82743157046?pwd=c0V1dG1wR0lnbG1waXVEazVVNnFEUT09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_be8c6df71f8e49cba368ea07751df1fa.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Executive Committee</td>
+              </tr>
+              <tr>
+                <td>August 12, 2022</td>
+                <td>9:30 a.m.</td>
+                <td>CANCELED</td>
+                <td></td>
+                <td>CANCELED - Executive Committee</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_1c2fbc40609048318c0289bccdeaaf59.pdf"
+                    target="_blank"
+                    >Sept. 21-23, 2022</a
+                  >
+                </td>
+                <td>TBD</td>
+                <td>Resort at Squaw Creek</td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_754ec5c1aa204d0f8a7c54b90754d9be.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Executive Committee (Planning)</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_e5d391bf8c39456d9794fa925e39085d.pdf"
+                    target="_blank"
+                    >October 10, 2022</a
+                  >
+                </td>
+                <td>10:00 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/85762405523?pwd=NEJqSTZZczROOTlidjlKL2ZCOUpZQT09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_97be920de6a04fe8b967f886c0df03bb.pdf"
+                    target="_blank"
+                    >October 20, 2022</a
+                  >
+                </td>
+                <td>9:45 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/88509840869?pwd=Q3IyRkdPZDREY3REdmpMTWNjSVN3Zz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_3723090b740d4f4b9c744f9cfde4cc55.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Special Property/Casualty Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_de711b60b77146059696a82671d899a5.pdf"
+                    target="_blank"
+                    >October 20, 2022</a
+                  >
+                </td>
+                <td>10:00 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/88509840869?pwd=Q3IyRkdPZDREY3REdmpMTWNjSVN3Zz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_d76fc65b172444e7a876a86c22334198.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Special Property/Casualty Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_84715551318447f4bf30c4af25d42249.pdf"
+                    target="_blank"
+                    >November 28, 2022</a
+                  >
+                </td>
+                <td>2:00 p.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/88405327823?pwd=cVl6dFRXS01VeU9nYXBsN29DUFpZZz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_9ad4dcf3de4e40a8bb087fa99b7c5a22.pdf"
+                    target="_blank"
+                    >December 2, 2022</a
+                  >
+                </td>
+                <td>9:15 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/88405327823?pwd=cVl6dFRXS01VeU9nYXBsN29DUFpZZz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_7791a0bcfc0f47989698c33148453fff.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Special Executive Committee</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_691cb5048f9f4141a980115c71f93703.pdf"
+                    target="_blank"
+                    >December 2, 2022</a
+                  >
+                </td>
+                <td>9:30 a.m.</td>
+                <td>
+                  <a
+                    href="https://us06web.zoom.us/j/88405327823?pwd=cVl6dFRXS01VeU9nYXBsN29DUFpZZz09"
+                    target="_blank"
+                    >Join Zoom Meeting
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_973683b0f2f64d179eb588ccab3bbe59.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Executive Committee</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-sm-11 mx-auto fw-light">
+          <h2 class="text-center fs-1 mb-3" id="2021">2021</h2>
+          <table class="table table-striped table-bordered">
+            <thead class="text-center">
+              <tr class="bg-secondary text-white">
+                <th>DATE</th>
+                <th>TIME</th>
+                <th>LOCATION</th>
+                <th>MINUTES</th>
+                <th>MEETING</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_e6c40368ae53479c8309d9934b39597f.pdf"
+                    target="_blank"
+                    >January 7, 2021</a
+                  >
+                </td>
+                <td>11:00 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_e6c40368ae53479c8309d9934b39597f.pdf"
+                    target="_blank"
+                    >January 15, 2021</a
+                  >
+                </td>
+                <td>9:30 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_c0242cd3393741f0b31e04a36adcefce.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Executive Committee</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_e15ff024d532418aa01d19974b8633e2.pdf"
+                    target="_blank"
+                    >February 26, 2021</a
+                  >
+                </td>
+                <td>9:30 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_6dc3d8365e4a468c9bfb3d64709fd05f.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_ce0532fc45504a90ad100ff81ab978ca.pdf"
+                    target="_blank"
+                    >March 18, 2021</a
+                  >
+                </td>
+                <td>10:30 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_958491b40d734b9687808894974c9932.pdf"
+                    target="_blank"
+                    >March 26, 2021</a
+                  >
+                </td>
+                <td>10:00 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_b388ff2bb05b448aadc221a9d176279e.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Executive Committee</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_e32131c2d9204d3ea051a9346f55d2d0.pdf"
+                    target="_blank"
+                    >April 12, 2021</a
+                  >
+                </td>
+                <td>11:00 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_82aa8c52706145d18d92de35d6f7a52c.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Joint Powers Board</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_caf406d13b5e4f788181b551cb971a1d.pdf"
+                    target="_blank"
+                    >April 23, 2021</a
+                  >
+                </td>
+                <td>9:30 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/81a2b2_4ee29716b0fe49e1b7c922fcf76d9072.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_a99de583936e45d3970c6bc997017acc.pdf"
+                    target="_blank"
+                    >April 23, 2021</a
+                  >
+                </td>
+                <td>12:45 p.m.</td>
+                <td>Zoom Meeting</td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_acb141f2446c4c3081547e3b648b904e.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_b28cdd4b1b0e410eba5f297032683ab1.pdf"
+                    target="_blank"
+                    >June 8, 2021</a
+                  >
+                </td>
+                <td>10:00 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_4c443107f3884218ab1c195781825cbd.pdf"
+                    target="_blank"
+                    >June 14, 2021</a
+                  >
+                </td>
+                <td>9:00 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_4f0d78db4cde42f8a24bf2ad0db52a48.pdf"
+                    target="_blank"
+                    >June 18, 2021</a
+                  >
+                </td>
+                <td>9:30 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_6756c40b7b37430ca333b6517fd436b6.pdf"
+                    target="_blank"
+                    >June 18, 2021</a
+                  >
+                </td>
+                <td>1:00 p.m.</td>
+                <td>Zoom Meeting</td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_33806ed0e70f4163a7f4f93236a9897c.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Executive Committee</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_3ee4c3038d9e4249b4ddb425003e010b.pdf"
+                    target="_blank"
+                    >July 29, 2021</a
+                  >
+                </td>
+                <td>1:00 p.m.</td>
+                <td>Zoom Meeting</td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_116a7d58695646f2a28714329ec1a33e.pdf"
+                    target="_blank"
+                    >August 2, 2021</a
+                  >
+                </td>
+                <td>9:00 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_7f4e3b5f0f234776b1d7ec956eba651c.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_116a7d58695646f2a28714329ec1a33e.pdf"
+                    target="_blank"
+                    >August 13, 2021</a
+                  >
+                </td>
+                <td>9:30 a.m.</td>
+                <td>TCSIG Board Room</td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_0ba7c18ebdb04a47a78917f61391706d.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Executive Committee Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_1f71849f7d214639a0ad4d89e9ec614a.pdf"
+                    target="_blank"
+                    >Sept 22-24, 2021</a
+                  >
+                </td>
+                <td>TBD</td>
+                <td>Embassy Suites Sac</td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_295b5379f42440b997e6667dd33a896a.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Executive Committee (Planning)</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_f16ceeccee0a438680aaa637224a110a.pdf"
+                    target="_blank"
+                    >November 2, 2021</a
+                  >
+                </td>
+                <td>11:00 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td></td>
+                <td>Special Meeting</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_d215b48465cd4a05977bfe562bc39b97.pdf"
+                    target="_blank"
+                    >November 5, 2021</a
+                  >
+                </td>
+                <td>9:30 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_33dc4a26be10421fa77bdc868edb8385.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Executive Committee</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_ef098e80cb0a47e39c2155c865453efb.pdf"
+                    target="_blank"
+                    >December 7, 2021</a
+                  >
+                </td>
+                <td>9:30 a.m.</td>
+                <td>Zoom Meeting</td>
+                <td>
+                  <a
+                    href="https://www.tcsig.com/_files/ugd/495bc1_7b7ed88ad51844c99de41131da314291.pdf"
+                    target="_blank"
+                    >Approved</a
+                  >
+                </td>
+                <td>Special Meeting</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div class="d-flex flex-column">
+      <footer class="bg-secondary text-white mt-auto">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>About Company</h5>
+              <img
+                src="./images/TCSIG-Logo.jpeg"
+                alt="Company Logo"
+                class="img-fluid mb-3"
+                width="250"
+              />
+              <p>
+                Our Mission is to pool risk and purchasing power of public
+                entities to provide quality programs to our participants in an
+                effective manner while emphasizing customer satisfaction,
+                stability, financial solvency and cost.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5>Contact Form</h5>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <select
+                    class="form-select"
+                    id="subject"
+                    name="subject"
+                    required
+                  >
+                    <option value>Choose a subject</option>
+                    <option value="employee-benefits">Employee Benefits</option>
+                    <option value="wellness-center">Wellness Center</option>
+                    <option value="workers-comp">Worker's Comp</option>
+                    <option value="property-casualty">
+                      Property / Casualty
+                    </option>
+                    <option value="governance">Governance</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 bg-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <h5>Locations</h5>
+              <ul class="list-unstyled">
+                <li><strong>TCSIG Admin Office</strong></li>
+                <li>530-822-5299</li>
+                <li>400 Plumas Blvd., Suite 210</li>
+                <li>Yuba City, CA 95991</li>
+                <li class="mt-3"><strong>TCSIG Wellness Center</strong></li>
+                <li>530-822-5500</li>
+                <li>1174 Live Oak Blvd.</li>
+                <li>Yuba City, CA 95991</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
