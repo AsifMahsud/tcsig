@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>News | TCSIG</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="icon" sizes="192x192" href="./images/site-icon.png" />
+    <meta http-equiv="content-language" content="en-us" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/index.js"></script>
+    <style>
+      .hero-section {
+        background-image: url("./images/news-header-bg.jpg");
+        background-size: cover;
+        height: 600px;
+        position: relative;
+      }
+
+      .hero-overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: #fff;
+      }
+
+      .hero-content h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="container">
+      <!-- header container -->
+      <div class="bg-secondary mx-2 d-lg-flex">
+        <!-- logo -->
+        <div class="logo px-4 py-4 bg-primary">
+          <img
+            src="./images/TCSIG-Logo.jpeg"
+            class="img-fluid"
+            alt="tcsig site icon"
+          />
+        </div>
+        <div class="header-content w-100">
+          <div
+            class="mx-4 mx-lg-0 d-flex justify-content-between justify-content-lg-start align-items-baseline"
+          >
+            <!-- primary nav -->
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler px-4 py-3 bg-primary text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown2"
+                  aria-controls="navbarNavDropdown2"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  MENU <i class="fa-solid fa-bars ps-2"></i>
+                </button>
+                <div
+                  class="collapse navbar-collapse px-2"
+                  id="navbarNavDropdown2"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        aria-current="page"
+                        href="./about-us.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li
+                      class="nav-item dropdown"
+                      id="employee-benefits-dropdown"
+                    >
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="./employee-benefits.html"
+                        >Employee Benefits</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="./medical.html"
+                            >Medical</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./dental.html"
+                            >Dental</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./vision.html"
+                            >Vision</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./ prescription-rx.html"
+                            >Prescription RX</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./medical.html"
+                            >Mental Health / EAP</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./medical.html"
+                            >Chiropractic Services</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./medical.html"
+                            >Telemedicine</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Wellness Center</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Worker's Comp</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Property / Casualty</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- search icon -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#searchModal"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="searchModal"
+              tabindex="-1"
+              aria-labelledby="searchModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg position-fixed top-0 end-0"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="fa fa-times text-dark fs-1"></i>
+                  </button>
+                  <div class="modal-body">
+                    <form class="searchform" action="#">
+                      <input
+                        type="search"
+                        class="form-control"
+                        name="search"
+                        value=""
+                        id="search"
+                        placeholder="Type keyword(s) here and hit Enter …"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- secondary nav and chat icon -->
+          <div class="secondary-nav my-2 my-lg-0 mx-4">
+            <!-- secondary nav -->
+            <nav class="navbar navbar-expand-lg bg-secondary">
+              <button
+                class="navbar-toggler text-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="position-relative w-100">
+                <div
+                  class="collapse navbar-collapse position-absolute w-100 bg-light p-4 p-lg-0 rounded"
+                  id="navbarNavDropdown"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Governance</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Documents</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- chat icon -->
+              <a href="#"
+                ><img
+                  src="./images/LynnSisnerosBitmoji.png"
+                  class="img-fluid chat-icon"
+                  alt="TCSIG personality. Lynn bitmoji"
+                  width="80"
+              /></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero-section mb-5">
+      <div
+        class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0"
+      >
+        <div class="container h-100">
+          <div class="hero-content">
+            <h1 class="text-center">
+              <span class="stroke-full">NEWS</span>
+            </h1>
+            <div class="hero-buttons flex-column flex-lg-row">
+              <a
+                href="https://www.vsp.com/"
+                target="_blank"
+                class="btn btn-primary bg-primary"
+                >ANNOUNCEMENTS</a
+              >
+              <a
+                href="https://apias.vsp.com/as/authorization.oauth2?client_id=vsp-memberportal-ui&scope=openid%20auth_member_rest%20profile%20read:vc.find_a_doctor%20provider_view%20read:vc.memberusermanagement%20write:vc.memberusermanagement%20read:vc.memberbenefits%20write:vc.memberbenefits%20write:vc.find_a_doctor%20finance_view%20write:vc.finance%20read:vc.outofnetworkclaim%20write:vc.outofnetworkclaim%20ecom_view&redirect_uri=https://apias.vsp.com/acs2/redirect&response_type=code&state=vsp-memberportal-ui.043593b4-ff06-11ed-b15d-c1b67a28fd1e"
+                target="_blank"
+                class="btn btn-primary bg-primary"
+                >COVID-19 UPDATES</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row mb-4">
+        <h1 class="text-center">Blogs</h1>
+      </div>
+      <div class="col-md-10 mx-auto mb-3">
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >Newsletter</strong
+                >
+                <h3 class="mb-1">TCSIG Groundbreaking</h3>
+                <div class="mb-1 text-muted">2022</div>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block bg-secondary p-2">
+                <img
+                  src="./images/newsletter-2022-1.jpeg"
+                  width="200px"
+                  height="200px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-3 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >Newsletter</strong
+                >
+                <h3 class="mb-0">Welcome TCSIG members and employees!</h3>
+                <div class="mb-1 text-muted">2022</div>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block bg-secondary p-2">
+                <img
+                  src="./images/newsletter-2022-2.jpeg"
+                  width="200px"
+                  height="200px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-10 mx-auto mb-3">
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >Newsletter</strong
+                >
+                <h3 class="mb-1">Great News!</h3>
+                <div class="mb-1 text-muted">Spring 2021</div>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block bg-secondary p-2">
+                <img
+                  src="./images/newsletter-2021-1.jpg"
+                  width="200px"
+                  height="200px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-3 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >Newsletter</strong
+                >
+                <h3 class="mb-0">ACSIG/EDGE DENTAL NEWSLETTER</h3>
+                <div class="mb-1 text-muted">Spring 2021</div>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block bg-secondary p-2">
+                <img
+                  src="./images/newsletter-2021-2.jpg"
+                  width="200px"
+                  height="200px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-10 mx-auto mb-3">
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >Newsletter</strong
+                >
+                <h3 class="mb-1">Self-care for the whole you</h3>
+                <div class="mb-1 text-muted">May/June 2020</div>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block bg-secondary p-2">
+                <img
+                  src="./images/newsletter-2020-2.png"
+                  width="200px"
+                  height="200px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-3 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >Newsletter</strong
+                >
+                <h3 class="mb-0">Simple ways to be kind to your mind</h3>
+                <div class="mb-1 text-muted">May/June 2020</div>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block bg-secondary p-2">
+                <img
+                  src="./images/newsletter-2020-1.png"
+                  width="200px"
+                  height="200px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-10 mx-auto mb-3">
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >Newsletter</strong
+                >
+                <h3 class="mb-1">Your EAP news</h3>
+                <div class="mb-1 text-muted">May/June 2020</div>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block bg-secondary p-2">
+                <img
+                  src="./images/newsletter-2020-3.jpg"
+                  width="200px"
+                  height="200px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-3 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >Newsletter</strong
+                >
+                <h3 class="mb-0">ACSIG/EDGE DENTAL NEWSLETTER</h3>
+                <div class="mb-1 text-muted">May/June 2020</div>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block bg-secondary p-2">
+                <img
+                  src="./images/newsletter-2021-2.jpg"
+                  width="200px"
+                  height="200px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-10 mx-auto mb-3">
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >Newsletter</strong
+                >
+                <h3 class="mb-1">FROM THE PRESIDENT</h3>
+                <div class="mb-1 text-muted">Fall 2018</div>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block bg-secondary p-2">
+                <img
+                  src="./images/newsletter-2019-1.jpg"
+                  width="200px"
+                  height="200px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-3 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >Newsletter</strong
+                >
+                <h3 class="mb-0">Notice of Action Taken March 16, 2018</h3>
+                <div class="mb-1 text-muted">May/June 2018</div>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block bg-secondary p-2">
+                <img
+                  src="./images/newsletter-2019-2.jpg"
+                  width="200px"
+                  height="200px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-10 mx-auto mb-3">
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-3 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >Newsletter</strong
+                >
+                <h3 class="mb-1">Words from Ryan Robison, JPA President</h3>
+                <div class="mb-1 text-muted">Mar/April 2018</div>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block bg-secondary p-2">
+                <img
+                  src="./images/newsletter-2019-3.jpg"
+                  width="200px"
+                  height="200px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-3 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >Newsletter</strong
+                >
+                <h3 class="mb-0">
+                  Happy New Year from Ryan Robison, JPA President
+                </h3>
+                <div class="mb-1 text-muted">Jan/Feb 2018</div>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block bg-secondary p-2">
+                <img
+                  src="./images/newsletter-2019-4.jpg"
+                  width="200px"
+                  height="200px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div class="d-flex flex-column">
+      <footer class="bg-secondary text-white mt-auto">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>About Company</h5>
+              <img
+                src="./images/TCSIG-Logo.jpeg"
+                alt="Company Logo"
+                class="img-fluid mb-3"
+                width="250"
+              />
+              <p>
+                Our Mission is to pool risk and purchasing power of public
+                entities to provide quality programs to our participants in an
+                effective manner while emphasizing customer satisfaction,
+                stability, financial solvency and cost.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5>Contact Form</h5>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <select
+                    class="form-select"
+                    id="subject"
+                    name="subject"
+                    required
+                  >
+                    <option value="">Choose a subject</option>
+                    <option value="employee-benefits">Employee Benefits</option>
+                    <option value="wellness-center">Wellness Center</option>
+                    <option value="workers-comp">Worker's Comp</option>
+                    <option value="property-casualty">
+                      Property / Casualty
+                    </option>
+                    <option value="governance">Governance</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 bg-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <h5>Locations</h5>
+              <ul class="list-unstyled">
+                <li><strong>TCSIG Admin Office</strong></li>
+                <li>530-822-5299</li>
+                <li>400 Plumas Blvd., Suite 210</li>
+                <li>Yuba City, CA 95991</li>
+                <li class="mt-3"><strong>TCSIG Wellness Center</strong></li>
+                <li>530-822-5500</li>
+                <li>1174 Live Oak Blvd.</li>
+                <li>Yuba City, CA 95991</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <p class="text-center">&copy; Tri-County Schools Insurance Group</p>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
