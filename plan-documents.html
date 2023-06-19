@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Wellness Center | TCSIG</title>
+    <title>Healthcare Bluebook | TCSIG</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=yes"
@@ -11,17 +11,6 @@
     <meta name="keywords" content />
     <link rel="icon" sizes="192x192" href="./images/site-icon.png" />
     <meta http-equiv="content-language" content="en-us" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -37,109 +26,29 @@
       referrerpolicy="no-referrer"
     />
     <script src="./js/index.js"></script>
-    <style>
-      .hero-section {
-        background-image: url("./images/wellness-center-modal.jpg");
-        background-size: cover;
-        height: 500px;
-        position: relative;
+    <script>
+      function setHeroMinHeight() {
+        var headerHeight = document.querySelector("header").offsetHeight;
+        document.querySelector(".hero-section").style.paddingTop =
+          headerHeight + 80 + "px";
       }
 
-      .hero-overlay {
-        background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
+      window.addEventListener("DOMContentLoaded", setHeroMinHeight);
+      window.addEventListener("resize", setHeroMinHeight);
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
 
-      .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        color: #fff;
-      }
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
 
-      .hero-content h1 {
-        font-size: 36px;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
-
-      .hero-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 20px;
-      }
-
-      @media (max-width: 767px) {
-        .carousel-inner .carousel-item > div {
-          display: none;
-        }
-        .modal-img {
-          width: 100%;
-        }
-        .carousel-inner .carousel-item > div:first-child {
-          display: block;
-        }
-      }
-
-      .carousel-inner .carousel-item.active,
-      .carousel-inner .carousel-item-next,
-      .carousel-inner .carousel-item-prev {
-        display: flex;
-        color: white;
-      }
-
-      /* medium and up screens */
-      @media (min-width: 768px) {
-        .carousel-inner .carousel-item-end.active,
-        .carousel-inner .carousel-item-next {
-          transform: translateX(25%);
-        }
-
-        .carousel-inner .carousel-item-start.active,
-        .carousel-inner .carousel-item-prev {
-          transform: translateX(-25%);
-        }
-      }
-
-      .carousel-inner .carousel-item-end,
-      .carousel-inner .carousel-item-start {
-        transform: translateX(0);
-      }
-
-      .carousel-image {
-        height: 300px; /* adjust to desired height */
-        object-fit: cover;
-      }
-
-      .heart-icon {
-        font-size: 2rem;
-        cursor: pointer;
-        transition: color 0.3s ease;
-      }
-
-      @media only screen and (max-width: 820px) {
-        .hero-section {
-          height: 650px;
-        }
-      }
-
-      @media only screen and (max-width: 575px) {
-        .schedule-appointment {
-          max-width: 40%;
-        }
-      }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
-    <header class="container">
+    <header class="container position-absolute top-0 start-0 end-0">
       <!-- header container -->
       <div class="bg-secondary mx-2 d-lg-flex">
         <!-- logo -->
@@ -488,287 +397,74 @@
       </div>
     </header>
 
-    <!-- header with images and button -->
-    <section class="hero-section mb-5">
+    <section
+      class="hero-section position-relative"
+      style="background-image: url(./images/plan-documents.jpg)"
+    >
       <div
         class="container-bg-overlay position-absolute top-0 bottom-0 start-0 end-0"
+      ></div>
+      <div
+        class="container d-flex flex-column justify-content-end position-relative"
       >
-        <div class="container h-100">
-          <div class="hero-content">
-            <h1 class="text-center text-light">TCSIG Wellness Center</h1>
-            <div class="hero-buttons flex-column flex-lg-row">
-              <a
-                href="https://mycw119.ecwcloud.com/portal16498/jsp/100mp/login_otp.jsp"
-                target="_blank"
-                class="btn btn-primary bg-primary p-2"
-                >PATIENT PORTAL</a
-              >
-              <a
-                href="#schedule-appointment"
-                class="btn btn-primary bg-primary p-2"
-                >SCHEDULE APPOINTMENT</a
-              >
-              <a href="#televisit" class="btn btn-primary bg-primary p-2"
-                >TELEVISIT</a
-              >
-            </div>
-          </div>
-        </div>
+        <h1 class="text-white">Plan Documents</h1>
       </div>
     </section>
 
-    <!-- Medical service -->
-    <section class="container mb-5">
-      <div class="row">
-        <div class="col-md-10 mx-auto">
-          <div class="row mb-4">
-            <h2 class="text-center">
-              Medical Services Provided by Acorn Health Group
-            </h2>
-          </div>
-
-          <div class="row mb-2">
-            <div class="col-md-4 text-center mb-3">
-              <img
-                src="./images/wellness-center-logo.jpeg"
-                class="img-fluid"
-                alt="Responsive image"
-              />
-            </div>
-            <div class="col-md-8 mb-3">
-              <h4 class="text-center">
-                Come visit us at the TCSIG Wellness Center!
-              </h4>
-              <p class="text-center lead">
-                We are here to serve you and your family with all of your
-                primary care needs. All care delivered at the Wellness Center is
-                free to you and your family! Schedule an appointment today and
-                we look forward to seeing you soon!
-              </p>
-            </div>
-          </div>
-        </div>
+    <section class="hero-breadcrumb border-bottom mb-4 py-2">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0">
+            <li class="breadcrumb-item">
+              <a href="/documents">Documents</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Plan Documents
+            </li>
+          </ol>
+        </nav>
       </div>
     </section>
 
-    <!-- Images carousel-->
-    <section class="container mb-5 col-md-10 text-center">
-      <div class="row mx-auto my-auto justify-content-center">
-        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <div class="col-md-4 px-1">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./images/modal-image-1.jpeg"
-                      class="carousel-image img-fluid d-block w-100 rounded"
-                    />
-                  </div>
-                  <i
-                    class="fa-regular fa-light fa-heart position-absolute top-50 start-50 translate-middle heart-icon"
-                  ></i>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-md-4 px-1">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./images/modal-image-2.jpeg"
-                      class="carousel-image img-fluid d-block w-100 rounded"
-                    />
-                  </div>
-                  <i
-                    class="fa-regular fa-light fa-heart position-absolute top-50 start-50 translate-middle heart-icon"
-                  ></i>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-md-4 px-1">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./images/modal-image-3.jpeg"
-                      class="carousel-image img-fluid d-block w-100 rounded"
-                    />
-                  </div>
-                  <i
-                    class="fa-regular fa-light fa-heart position-absolute top-50 start-50 translate-middle heart-icon"
-                  ></i>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-md-4 px-1 modal-img">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./images/modal-image-4.jpeg"
-                      class="carousel-image img-fluid d-block w-100 rounded"
-                    />
-                  </div>
-                  <i
-                    class="fa-regular fa-light fa-heart position-absolute top-50 start-50 translate-middle heart-icon"
-                  ></i>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-md-4 px-1">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./images/modal-image-5.jpeg"
-                      class="carousel-image img-fluid d-block w-100 rounded"
-                    />
-                  </div>
-                  <i
-                    class="fa-regular fa-light fa-heart position-absolute top-50 start-50 translate-middle heart-icon"
-                  ></i>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-md-4 px-1 modal-img">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./images/modal-image-6.jpeg"
-                      class="carousel-image img-fluid d-block w-100 rounded"
-                    />
-                  </div>
-                  <i
-                    class="fa-regular fa-light fa-heart position-absolute top-50 start-50 translate-middle heart-icon"
-                  ></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev bg-transparent w-aut"
-            href="#recipeCarousel"
-            role="button"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </a>
-          <a
-            class="carousel-control-next bg-transparent w-aut"
-            href="#recipeCarousel"
-            role="button"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </a>
-        </div>
-      </div>
-      <hr />
-    </section>
-
-    <!-- schedule appointment -->
-    <section class="container mb-5" id="schedule-appointment">
-      <div class="row">
-        <div class="col-md-10 mx-auto">
-          <div class="row mb-4">
-            <h2 class="text-center">Schedule Appointment</h2>
-          </div>
-
-          <div class="row mb-2">
-            <div class="col-md-5 text-center mb-2">
-              <div class="mb-2">
-                <h5>Located at 1174 Live Oak Boulevard in Yuba City</h5>
-                <span> <a href="tel: 5308225500">(530) 822-5500</a> Phone</span>
-                <br />
-                <span> <a href="tel: 5308225503">(530) 822-5503</a> Fax</span>
-              </div>
-              <div class="mb-2">
-                <h5>Wellness Center Hours:</h5>
-                <span>Mon -Fri: 8:00am-7:00pm</span>
-                <br />
-                <span>Saturday: 9:00am-3:00pm</span>
-                <br />
-                <span>Sunday: Closed</span>
-              </div>
-              <span class="fw-light fs-6"
-                >**Wellness Center is closed on the second
-                <br />
-                Tuesday of every month from 11:00AM to 12:00PM.</span
-              >
-            </div>
-            <div class="col-md-7 mb-3">
-              <div
-                class="border border-2 rounded border-secondary m-2 mt-4 px-2 pt-2"
-              >
-                <div class="row">
-                  <div
-                    class="col-sm-3 justify-content-center d-flex aligns-items-center"
-                  >
-                    <img
-                      src="./images/schedule-appointment.png"
-                      class="img-fluid schedule-appointment"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-sm-9 px-sm-4 text-center mt-2">
-                    <a
-                      href="https://healow.com/apps/practice/acorn-health-solutions-yuba-city-ca-18722?v=1"
-                      target="_blank"
-                      class="fs-5 lead text-decoration-underline"
-                    >
-                      Click Here to Schedule an Appointment
-                    </a>
-                    <br />
-                    <span
-                      ><small
-                        >FOR TCSIG MEDICAL PROGRAM MEMBERS ONLY</small
-                      ></span
-                    >
-                    <img
-                      src="./images/schedule-appointment-bg.png"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- televisit -->
     <section class="container mb-5" id="televisit">
-      <div class="col-md-10 mx-auto">
-        <div class="row mb-4">
-          <h2 class="text-center">Telemedicine</h2>
-        </div>
+      <div class="col-10 mx-auto">
+        <div class="row mb-4" id="plan-documents">
+          <h2 class="text-center fs-1 text-primary fw-bold mb-5" id="voluntary">
+            Plan Documents
+          </h2>
+          <p>
+            Tri-County Schools Insurance Group's
+            <a href="#medical-plan">Medical Plan Document</a> may be reviewed
+            from this page. The Medical Plan Document is also available upon
+            request from the TCSIG office (530) 822-5299. <br /><br />These
+            plans are designed to give you the best possible benefit through the
+            use of the Anthem Blue Cross Network. <br /><br />
+            To locate an Anthem Blue Cross provider visit their
+            <a href="https://www.anthem.com/ca/find-care/" target="_blank"
+              >website</a
+            >
+            . For Plan Type select "large groups" and then select a Plan "Blue
+            Cross PPO" and then select your provider type.
+            <br /><br />Tri-County Schools Insurance Group's
+            <a href="#delta-plan" target="_blank">Delta Dental Plan Book</a> may
+            be reviewed from this page.
+          </p>
 
-        <div class="row">
-          <div class="col-md-10">
-            <p>
-              TCSIG is here to care for you. On call providers are available to
-              provide you with the best care possible. TCSIG has several
-              telemedicine options for you to discover. Quality care right from
-              your smartphone or computer.
-            </p>
-            <ul>
-              <li class="mb-2">
-                <b>TCSIG Wellness Center TeleVisit – </b> Video visits with a
-                TCSIG Nurse Practitioner
-              </li>
-              <li class="mb-2">
-                <b>LiveHealth Online –</b> Video visits with a Board-certified
-                Doctor
-              </li>
-              <li class="mb-2">
-                <b>LiveHealth Online Psychiatry –</b> Video visits with a
-                Board-certified Psychiatrist
-              </li>
-            </ul>
+          <div class="text-center">
+            <a
+              href="https://www.tcsig.com/_files/ugd/81a2b2_240c72c0530e4a4da4b94e64e129f6a6.pdf"
+              id="medical-plan"
+              target="_blank"
+              class="btn btn-primary bg-primary"
+              >Open Medical Plan Document</a
+            >
+            <a
+              href="https://www.tcsig.com/_files/ugd/81a2b2_461c14aaee1e4ddebbc1fb6b41339aea.pdf"
+              target="_blank"
+              id="delta-plan"
+              class="btn btn-primary bg-primary"
+              >Open Delta Dental Plan Book</a
+            >
           </div>
         </div>
       </div>
@@ -883,31 +579,3 @@
     </div>
   </body>
 </html>
-
-<script>
-  let items = document.querySelectorAll(".carousel .carousel-item");
-  items.forEach((el) => {
-    const minPerSlide = 4;
-    let next = el.nextElementSibling;
-    for (var i = 1; i < minPerSlide; i++) {
-      if (!next) {
-        next = items[0];
-      }
-      let cloneChild = next.cloneNode(true);
-      el.appendChild(cloneChild.children[0]);
-      next = next.nextElementSibling;
-    }
-  });
-</script>
-<script>
-  window.addEventListener("DOMContentLoaded", (event) => {
-    document.querySelectorAll(".heart-icon").forEach(function (icon) {
-      icon.addEventListener("click", function () {
-        this.classList.toggle("fa-solid");
-      });
-      icon.addEventListener("click", function () {
-        this.classList.toggle("text-danger");
-      });
-    });
-  });
-</script>
